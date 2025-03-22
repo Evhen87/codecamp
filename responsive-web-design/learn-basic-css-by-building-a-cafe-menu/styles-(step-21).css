@@ -97,7 +97,12 @@ Add a max-width property to the menu class with a value of 500px to prevent it f
  The image you added is not centered horizontally like the Coffee heading above it. img elements are "like" inline elements.
  
  To make the image behave like heading elements (which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally.*/
-img {
+ /*Step 91
+ It would be nice if the vertical space between the h2 elements and their associated icons was smaller. The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+ 
+ There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this project, go ahead and use a negative top margin of 25px in the img type selector.*/
+ img {
+   margin-top: -25px;
    display: block;
    margin-left: auto;
    margin-right: auto;
