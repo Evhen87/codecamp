@@ -171,3 +171,6 @@ Using the same style selector in the previous step, make the font size of the it
   margin-bottom: 5px;
   font-size: 18px;
  }
+ /*Step 77
+Next you are going to be styling the footer element. To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER.*/
+/*FOOTER*/
