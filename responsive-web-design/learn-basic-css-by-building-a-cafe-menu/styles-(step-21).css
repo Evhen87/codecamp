@@ -28,6 +28,11 @@ Example Code
    background: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
    font-family: sans-serif;
  }
+ /*Step 60
+Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic.*/
+.established {
+   font-style: italic;
+ }
  /*Step 23
 Now use the existing #menu selector to set the background color of the div element to be burlywood.*/
 /*Step 24
