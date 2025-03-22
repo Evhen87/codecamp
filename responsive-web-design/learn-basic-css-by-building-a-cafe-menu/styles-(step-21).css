@@ -46,6 +46,11 @@ Change the existing #menu selector into a class selector by replacing #menu with
    margin-left: auto;
    margin-right: auto;
  }
+ /*Step 33
+Using your new flavor class as a selector, set the text-align property's value to left.*/
+.flavor {
+   text-align: left;
+ }
  h1, h2, p {
    text-align: center;
  }
