@@ -23,6 +23,10 @@ To apply the class's styling to the div element, remove the id attribute and add
          <section>
             <!--Step 29
 It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer.-->
+            <!--Step 36
+That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element.
+
+To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements. To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading.-->
             <h2>Coffee</h2>
             <!--Step 30Passed
 article elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor. Nest two p elements inside your article element. The first one's text should be French Vanilla, and the second's text 3.00.-->
@@ -34,7 +38,7 @@ article elements commonly contain multiple elements that have related informatio
             Pumpkin Spice 3.50
             Hazelnut 4.00
             Mocha 4.50-->
-            <article>
+            <article class="item">
                <!--Step 32
 The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right.
 
