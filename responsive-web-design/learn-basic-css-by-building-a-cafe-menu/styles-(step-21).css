@@ -40,11 +40,17 @@ Example Code
   styles
 }
 Change the existing #menu selector into a class selector by replacing #menu with a class named .menu.*/
+/*Step 53
+You can give your menu some space between the content and the sides with various padding properties.
+
+Give the menu class a padding-left and a padding-right with the same value 20px.*/
  .menu {
    width: 80%;
    background-color: burlywood;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 20px;
+   padding-right: 20px;
  }
  /*Step 33
 Using your new flavor class as a selector, set the text-align property's value to left.*/
