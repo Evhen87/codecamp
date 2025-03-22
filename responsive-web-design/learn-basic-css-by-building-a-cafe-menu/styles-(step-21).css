@@ -94,8 +94,11 @@ Add the fallback font serif after the Impact font.*/
 The default properties of an hr element will make it appear as a thin light grey line. You can change the height of the line by specifying a value for the height property.
 
 Change the height of the hr element to be 3px.*/
+/*Step 68
+Change the background color of the hr element to brown so it matches the color of the coffee beans.*/
 hr {
    height: 3px;
+   background-color: brown;
  }
 h1, h2 {
    font-family: Impact, serif;
