@@ -16,6 +16,9 @@
 //Use the let keyword to declare a variable called xp and assign it the value of 0, a number.*/
 /*Step 7
 Initialize another variable called health with a value of 100, and a variable called gold with a value of 50.*/
+/*Step 8
+Create another variable called currentWeaponIndex and set it to 0.*/
 let xp = 0;
 let health = 100;
 let gold = 50;
+let currentWeaponIndex = 0;
