@@ -13,6 +13,11 @@ Use the #menu selector to give your element a width of 300px.*/
 Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
 
 Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).*/
+/*Step 57
+You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+
+Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable.*/
+
 body {
    /*Step 22
 Comments in CSS look like this:
@@ -21,6 +26,7 @@ Example Code
 /* comment here */
 /*In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling the #menu element. This will make the background white again.*/
    background: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+   font-family: sans-serif;
  }
  /*Step 23
 Now use the existing #menu selector to set the background color of the div element to be burlywood.*/
