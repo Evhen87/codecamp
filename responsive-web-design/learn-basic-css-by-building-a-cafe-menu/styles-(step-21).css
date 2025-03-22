@@ -9,6 +9,10 @@ Example Code
 }
 Use the #menu selector to give your element a width of 300px.*/
 /*Solution*/
+/*Step 28
+Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
+
+Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).*/
 body {
    /*Step 22
 Comments in CSS look like this:
@@ -16,7 +20,7 @@ Comments in CSS look like this:
 Example Code
 /* comment here */
 /*In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling the #menu element. This will make the background white again.*/
-   /*background-color: burlywood;*/
+   background: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
  }
  /*Step 23
 Now use the existing #menu selector to set the background color of the div element to be burlywood.*/
