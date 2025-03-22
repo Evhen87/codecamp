@@ -190,8 +190,10 @@ a {
 You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
 
 Change the color of the footer Visit our website link to be grey when a user has visited the link.*/
+/*Step 83
+To keep with the same color theme you have already been using (black and brown), change the color for when the link is visited to black and use brown for when the link is actually clicked.*/
 a:visited { 
-   color: grey; 
+   color: black; 
 }
    /*Step 81
 You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
@@ -205,5 +207,5 @@ You change properties of a link when the link is actually being clicked by using
 
 Change the color of the footer Visit our website link to be white when clicked on.*/
 a:active {
-   color: white;
+   color: brown;
  }
