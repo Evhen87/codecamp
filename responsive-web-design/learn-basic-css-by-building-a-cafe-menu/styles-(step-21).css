@@ -17,7 +17,8 @@ Delete the comment and its contents inside the body type selector. Now add a bac
 You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
 
 Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable.*/
-
+/*Step 72
+To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property.*/
 body {
    /*Step 22
 Comments in CSS look like this:
@@ -27,6 +28,7 @@ Example Code
 /*In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling the #menu element. This will make the background white again.*/
    background: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
    font-family: sans-serif;
+   padding: 20px;
  }
  /*Step 60
 Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic.*/
