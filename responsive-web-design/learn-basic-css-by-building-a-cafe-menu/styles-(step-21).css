@@ -56,16 +56,20 @@ Well that did not work. Styling the p elements as inline-block and placing them 
 One way to fix this is to make each p element's width a little less than 50%. Change the width value to 49% for each class to see what happens.*/
 /*Step 41
 Now go ahead and change both the flavor and price class' widths to be 50% again.*/
+/*Step 45
+If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
+
+Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%.*/
 .flavor {
    text-align: left;
-   width: 50%; 
+   width: 75%; 
 }
  /*Step 35
 Now align the text to the right for the elements with the price class.
 */
 .price {
    text-align: right;
-   width: 50%;
+   width: 25%;
  }
  h1, h2, p {
    text-align: center;
