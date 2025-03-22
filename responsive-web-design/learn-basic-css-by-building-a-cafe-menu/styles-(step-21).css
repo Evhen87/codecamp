@@ -48,14 +48,18 @@ Change the existing #menu selector into a class selector by replacing #menu with
  }
  /*Step 33
 Using your new flavor class as a selector, set the text-align property's value to left.*/
+/*Step 38
+That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each.*/
 .flavor {
    text-align: left;
+   width: 50%;
  }
  /*Step 35
 Now align the text to the right for the elements with the price class.
 */
 .price {
    text-align: right;
+   width: 50%;
  }
  h1, h2, p {
    text-align: center;
