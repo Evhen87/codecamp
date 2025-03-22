@@ -10,7 +10,13 @@ Example Code
 Use the #menu selector to give your element a width of 300px.*/
 /*Solution*/
 body {
-   background-color: burlywood;
+   /*Step 22
+Comments in CSS look like this:
+
+Example Code
+/* comment here */
+/*In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling the #menu element. This will make the background white again.*/
+   /*background-color: burlywood;*/
  }
  #menu {
    width: 300px;
