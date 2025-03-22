@@ -60,7 +60,11 @@ Now go ahead and change both the flavor and price class' widths to be 50% again.
 If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
 
 Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%.*/
-.flavor {
+/*Step 51
+Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it.
+
+The CSS rule for the flavor class already sets the properties you want. Add the dessert class as an additional selector for this CSS rule.*/
+.flavor, .dessert {
    text-align: left;
    width: 75%; 
 }
