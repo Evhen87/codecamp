@@ -179,3 +179,10 @@ Moving down to the footer element, make all the text have a value of 14px for th
 footer {
    font-size: 14px;
  }
+ /*Step 79
+The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+
+To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.*/
+a {
+   color: black;
+}
