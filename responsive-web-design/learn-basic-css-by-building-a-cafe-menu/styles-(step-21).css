@@ -67,6 +67,13 @@ Add a max-width property to the menu class with a value of 500px to prevent it f
    padding: 20px;
    max-width: 500px;
  }
+ /*Step 58
+It is a bit boring for all the text to have the same font-family. You can still have the majority of the text sans-serif and make just the h1 and h2 elements different using a different selector.
+
+Style both the h1 and the h2 elements using a single selector so that these elements' text use Impact font.*/
+h1, h2 {
+   font-family: Impact
+ }
  /*Step 33
 Using your new flavor class as a selector, set the text-align property's value to left.*/
 /*Step 38
