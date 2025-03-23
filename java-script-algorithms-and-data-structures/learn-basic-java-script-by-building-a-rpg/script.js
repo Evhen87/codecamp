@@ -106,7 +106,20 @@ Once you have done that, open your console and try clicking the buttons on your 
 In your role playing game, you will be able to visit different locations like the store, the cave, and the town square. You will need to create a data structure that will hold the different locations.
 
 Use const to create a variable called locations and assign it an empty array.*/
-const locations = [];
+/*Step 54
+Your locations array will hold different locations like the store, the cave, and the town square. Each location will be represented as an object.
+
+Inside your locations array, add an object. Inside that object add a key called name with a value of "town square".
+
+Remember to follow this syntax:
+
+Example Code
+{
+  key: value
+}*/
+const locations = [
+   { name: "town square" }
+];
 /*Step 48
 Before you can begin to build out your locations array, you will first need to learn about objects. Objects are an important data type in JavaScript. The next few steps will be dedicated to learning about them so you will better understand how to apply them in your project.
 
@@ -157,10 +170,11 @@ const spaceObj = {
 Add a new property with a key of "Number of legs" and value of 4 to the cat object.
 
 Open up the console to see the output.*/
-const cat = {
-   name: "Whiskers",
-   "Number of legs": 4
-};
+/*Step 53
+Later on in the curriculum, you will dive deeper into objects. But for now, it is time to apply what you have learned to your role playing game.
+
+Start by deleting your cat object and console statement.*/
+
 /*Step 51
 There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
 
