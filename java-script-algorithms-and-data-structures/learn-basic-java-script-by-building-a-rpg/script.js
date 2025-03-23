@@ -127,6 +127,8 @@ In your goStore() function, update the onclick property for each button to run b
 You will also need to update the functions that run when the buttons are clicked again.
 
 In your goStore() function, update the onclick property for each button to run buyHealth, buyWeapon, and goTown, respectively.*/
+/*Step 41
+Now you need to modify your display text. Change the innerText property of the text variable to be "You enter the store.".*/
 function goStore() {
    button1.innerText = "Buy 10 health (10 gold)";
    button2.innerText = "Buy weapon (30 gold)";
@@ -134,6 +136,7 @@ function goStore() {
    button1.onclick = buyHealth;
    button2.onclick = buyWeapon;
    button3.onclick = goTown;
+   text.innerText = "You enter the store.";
 }
 /*Step 33
 //Now create a goCave function that prints "Going to cave." to the console.*/
@@ -144,4 +147,12 @@ function goCave() {
 //Now create a fightDragon function that prints "Fighting dragon." to the console.*/
 function fightDragon() {
    console.log("Fighting dragon.");
+}
+/*Step 42
+Create three new empty functions called buyHealth, buyWeapon, and goTown.*/
+function buyHealth() {
+}
+function buyWeapon() {
+}
+function goTown() {
 }
