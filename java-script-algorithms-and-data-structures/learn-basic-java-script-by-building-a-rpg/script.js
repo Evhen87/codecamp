@@ -117,8 +117,21 @@ Example Code
 {
   key: value
 }*/
+/*Step 55
+Just like array values, object properties are separated by a comma. Add a comma after your name property and add a button text property with the value of an empty array.
+
+Since the property name has a space in it, you will need to surround it with quotes.
+
+Example Code
+{
+  name: "Naomi",
+  "favorite color": "purple"
+}*/
 const locations = [
-   { name: "town square" }
+   {
+      name: "town square",
+      "button text": []
+   }
 ];
 /*Step 48
 Before you can begin to build out your locations array, you will first need to learn about objects. Objects are an important data type in JavaScript. The next few steps will be dedicated to learning about them so you will better understand how to apply them in your project.
