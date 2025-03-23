@@ -42,3 +42,8 @@ Using a selector list (selector1, selector2) give both your #controls and #stats
    color: #ffffff;
    background: #c70d0d;
  }
+ /*Step 27
+Next, give your .stat elements a padding-right of 10px.*/
+.stat {
+   padding-right: 10px;
+ }
