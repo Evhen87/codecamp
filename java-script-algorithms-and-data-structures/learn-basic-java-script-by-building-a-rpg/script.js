@@ -123,7 +123,23 @@ You will learn about keys and values in the next few steps.
 For now, create a const variable called cat and assign it an empty object {}.
 
 Below that cat variable, add a console.log(cat) statement to see the object in the console.*/
-const cat = {};
+/*Step 49
+Objects are similar to arrays, except that instead of using indexes to access and modify their data, you access the data in objects through properties.
+
+Properties consist of a key and a value. The key is the name of the property, and the value is the data stored in the property.
+
+Here is an example of an object with a single property:
+
+Example Code
+const obj = {
+  name: "Quincy Larson"
+};
+Inside your cat object, add a new property. The key should be name and the value should be the string "Whiskers".
+
+Open up the console to see the updates to your object.*/
+const cat = {
+   name: "Whiskers"
+};
 console.log(cat);
 //initialize buttons
 button1.onclick = goStore;
