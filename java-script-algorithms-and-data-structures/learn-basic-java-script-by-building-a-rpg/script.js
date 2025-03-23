@@ -102,6 +102,11 @@ Use dot notation to set the onclick property of your button1 to the function ref
 Using the same syntax, set the onclick properties of button2 and button3 to goCave and fightDragon respectively.
 Once you have done that, open your console and try clicking the buttons on your project.*/
 
+/*Step 47
+In your role playing game, you will be able to visit different locations like the store, the cave, and the town square. You will need to create a data structure that will hold the different locations.
+
+Use const to create a variable called locations and assign it an empty array.*/
+const locations = [];
 //initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
