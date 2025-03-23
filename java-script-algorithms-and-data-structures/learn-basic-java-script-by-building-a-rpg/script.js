@@ -98,8 +98,14 @@ button.onclick = myFunction;
 In this example, button is the button element, and myFunction is a reference to a function. When the button is clicked, myFunction will be called.
 
 Use dot notation to set the onclick property of your button1 to the function reference of goStore. Note that button1 is already declared, so you don't need to use let or const.*/
+/*Step 37
+Using the same syntax, set the onclick properties of button2 and button3 to goCave and fightDragon respectively.
+Once you have done that, open your console and try clicking the buttons on your project.*/
+
 //initialize buttons
 button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
 function goStore() {
    console.log("Going to store.")
 }
