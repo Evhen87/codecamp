@@ -8,6 +8,10 @@ To get started, create your standard HTML boilerplate with a DOCTYPE, html, head
 Finally, create a div element with id set to game within your body.-->
 <!DOCTYPE html>
 <html lang="en">
+<!--Step 16
+   We have run into a slight problem. You are trying to query your page for a button element, but your script tag is in the head of your HTML. This means your code runs before the browser has finished reading the HTML, and your document.querySelector() will not see the button - because the browser hasn't processed it yet.
+   
+   To fix this, move your script element out of the head element, and place it at the end of your body element (just before the closing </body> tag).-->
 
 <head>
    <meta charset="UTF-8">
@@ -30,9 +34,6 @@ Add a console.log("Hello World"); line between your script tags. Then click the 
 Before you start writing your project code, you should move it to its own file to keep things organized.
 
 Remove your console.log("Hello World"); line. Then give your now empty script element a src attribute set to ./script.js.-->
-   <script src="./script.js">
-      console.log("Hello World");
-   </script>
    <link rel="stylesheet" href="styles.css">
 </head>
 <!--Step 11
@@ -70,6 +71,8 @@ For your #controls element, create three button elements. The first should have 
 
       </div>
    </div>
+   <script src="./script.js">
+   </script>
 </body>
 
 </html>
