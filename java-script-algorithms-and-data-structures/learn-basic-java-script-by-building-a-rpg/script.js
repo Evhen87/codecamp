@@ -82,6 +82,13 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 //Create an empty function named goStore.*/
 /*Step 32
 //For now, make your goStore function output the message "Going to store." to the console.*/
+/*Step 35
+//In the previous project, you learned how to work with single line and multi-line comments like this:
+//Example Code
+//// I am a single-line comment
+//  I am a multi-line comment
+//Add a single-line comment that says initialize buttons.*/
+//initialize buttons
 function goStore() {
    console.log("Going to store.")
 }
