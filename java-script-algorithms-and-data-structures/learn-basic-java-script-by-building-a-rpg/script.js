@@ -293,8 +293,12 @@ Function parameters act as placeholders for values that you pass to the function
 Create an empty update function that takes a parameter called location.*/
 /*Step 60
 Now you can consolidate some of your code. Start by copying the code from inside the goTown function and paste it into your update function. Then, remove all the code from inside the goTown and goStore functions.*/
+/*Step 64
+Now your update function needs to use the argument you pass into it.
+
+Inside the update function, change the value of the button1.innerText assignment to be location["button text"]. That way, you use bracket notation to get the "button text" property of the location object passed into the function.*/
 function update(location) {
-   button1.innerText = "Go to store";
+   button1.innerText = location["button text"];
    button2.innerText = "Go to cave";
    button3.innerText = "Fight dragon";
    button1.onclick = goStore;
