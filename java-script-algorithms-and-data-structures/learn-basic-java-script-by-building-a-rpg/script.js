@@ -647,8 +647,11 @@ function fightDragon() {
 Fighting each type of monster will use similar logic. Create an empty function called goFight to manage this logic.*/
 /*Step 116
 In the goFight function, call your update function with the fourth object in locations as an argument.*/
+/*Step 117
+Below your update call, set the monsterHealth to be the health of the current monster. You can get this value by accessing the health property of monsters[fighting] with dot notation.*/
 function goFight() {
    update(locations[3]);
+   monsterHealth = monsters[fighting].health
 }
 /*Step 114
 At the end of your code, create two empty functions named attack and dodge.*/
