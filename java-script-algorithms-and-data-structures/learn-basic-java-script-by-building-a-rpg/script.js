@@ -540,6 +540,10 @@ If the player has purchased all of the weapons in the weapons array, the player 
 Add an else statement for your outer if statement. Inside this new else statement, set text.innerText to "You already have the most powerful weapon!".
 
 Test your buyWeapon function again to make sure the message is displayed when the player has the most powerful weapon.*/
+/*Step 101
+Once a player has the most powerful weapon, you can give them the ability to sell their old weapons.
+
+In the outer else statement, set button2.innerText to "Sell weapon for 15 gold". Also set button2.onclick to the function name sellWeapon.*/
 function buyWeapon() {
    if (currentWeaponIndex < weapons.length - 1) {
       if (gold >= 30) {
@@ -555,6 +559,8 @@ function buyWeapon() {
       }
    } else {
       text.innerText = "You already have the most powerful weapon!"
+      button2.innerText = "Sell weapon for 15 gold";
+      button2.onclick = sellWeapon;
    }
 }
 /*Step 70
