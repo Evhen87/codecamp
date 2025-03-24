@@ -135,6 +135,9 @@ Create another property in your object called button functions. Give this proper
 Add one final property to the object named text. Give this property the same string value as the one assigned to text.innerText in the goTown function.*/
 /*Step 59
 //Add a second object to your locations array (remember to separate them with a comma). Following the pattern you used in the first object, create the same properties but use the values from the goStore function. Set the name property to store.*/
+/*Step 80
+Use const to create a weapons variable above your locations array. Assign it an empty array.*/
+const weapons = [];
 const locations = [
    {
       name: "town square",
