@@ -39,7 +39,11 @@ Update the gold amount to 250.
 NOTE: The HTML has already been updated to reflect this change.
 
 To test your buyWeapon function, open up the console. Then click on the "Go to store" button followed by the "Buy weapon (30 gold)" button four times.*/
-let gold = 250;
+/*Step 100
+Now that you are finished testing that portion of the buyWeapon function, you can set your gold variable back to 50.
+
+Note: The HTML has already been updated to reflect the original value of gold.*/
+let gold = 50;
 let currentWeaponIndex = 0;
 let fighting;
 let inventory = ["stick"];
@@ -279,7 +283,6 @@ spaceObj["Space Name"]; // "Kirk"
 Update your console statement to use bracket notation to access the property "Number of legs" of the cat object.
 
 Open up the console to see the output.*/
-console.log(cat["Number of legs"]);
 //initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
