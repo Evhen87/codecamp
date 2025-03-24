@@ -209,6 +209,7 @@ You will learn about keys and values in the next few steps.
 For now, create a const variable called cat and assign it an empty object {}.
 
 Below that cat variable, add a console.log(cat) statement to see the object in the console.*/
+
 /*Step 49
 Objects are similar to arrays, except that instead of using indexes to access and modify their data, you access the data in objects through properties.
 
