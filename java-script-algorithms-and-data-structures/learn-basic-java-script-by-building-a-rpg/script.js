@@ -452,8 +452,12 @@ function buyHealth() {
 }
 /*Step 82
 Inside your buyWeapon function, add an if statement to check if gold is greater than or equal to 30.*/
+/*Step 83
+Similar to your buyHealth function, set gold equal to 30 less than its current value. Make sure this is inside your if statement.*/
 function buyWeapon() {
-   if (gold >= 30) { }
+   if (gold >= 30) {
+      gold -= 30;
+   }
 }
 /*Step 70
 Create two more empty functions named fightSlime and fightBeast. These functions will be used in your upcoming cave object.*/
