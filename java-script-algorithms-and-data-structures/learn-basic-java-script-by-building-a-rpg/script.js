@@ -291,10 +291,9 @@ function myFunction(param) {
 Function parameters act as placeholders for values that you pass to the function when you call it.
 
 Create an empty update function that takes a parameter called location.*/
+/*Step 60
+Now you can consolidate some of your code. Start by copying the code from inside the goTown function and paste it into your update function. Then, remove all the code from inside the goTown and goStore functions.*/
 function update(location) {
-
-}
-function goTown() {
    button1.innerText = "Go to store";
    button2.innerText = "Go to cave";
    button3.innerText = "Fight dragon";
@@ -303,14 +302,11 @@ function goTown() {
    button3.onclick = fightDragon;
    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
 }
+function goTown() {
+
+}
 function goStore() {
-   button1.innerText = "Buy 10 health (10 gold)";
-   button2.innerText = "Buy weapon (30 gold)";
-   button3.innerText = "Go to town square";
-   button1.onclick = buyHealth;
-   button2.onclick = buyWeapon;
-   button3.onclick = goTown;
-   text.innerText = "You enter the store.";
+
 }
 /*Step 33
 //Now create a goCave function that prints "Going to cave." to the console.*/
