@@ -362,8 +362,12 @@ function goStore() {
 }
 /*Step 33
 //Now create a goCave function that prints "Going to cave." to the console.*/
+/*Step 72
+Now that you have a "cave" location object, update your goCave function to call update and pass that new "cave" location. Remember that this is the third element in your locations array.
+
+Don't forget to remove your console.log call!*/
 function goCave() {
-   console.log("Going to cave.");
+   update(locations[2]);
 }
 /*Step 34
 //Now create a fightDragon function that prints "Fighting dragon." to the console.*/
