@@ -380,8 +380,11 @@ Create three new empty functions called buyHealth, buyWeapon, and goTown.*/
 Now that your "store" and "cave" locations are complete, you can code the actions the player takes at those locations. Inside the buyHealth function, set gold equal to gold minus 10.
 
 For example, here is how you would set num equal to 5 less than num: num = num - 5;.*/
+/*Step 74
+After the gold is updated, add a line to set health equal to health plus 10.*/
 function buyHealth() {
    gold = gold - 10;
+   health = health + 10;
 }
 function buyWeapon() {
 }
