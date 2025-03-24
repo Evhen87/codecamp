@@ -343,8 +343,12 @@ This is called bracket notation. Values in an array are accessed by index. Indic
 function goTown() {
    update(locations[0]);
 }
-function goStore() {
+/*Step 69
+Now update your goStore function to call the update function. Pass the second element of the locations array as your argument.
 
+To make sure your refactoring is correct, try clicking your first button again. You should see the same changes to your webpage that you saw earlier.*/
+function goStore() {
+   update(locations[1]);
 }
 /*Step 33
 //Now create a goCave function that prints "Going to cave." to the console.*/
