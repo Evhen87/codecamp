@@ -660,11 +660,16 @@ Example Code
 const paragraph = document.querySelector('p');
 paragraph.style.display = 'block';
 Display the monsterStats element by updating the display property of the style property to block.*/
+/*Step 119
+Now, you will need to update the text for the current monster's name and health.
+
+Start by assigning monsters[fighting].name to the innerText property of monsterName. Then, assign monsterHealth to the innerText property of monsterHealthText.*/
 function goFight() {
    update(locations[3]);
    monsterHealth = monsters[fighting].health;
-   const monsterStats = document.querySelector('#monsterStats ');
-   monsterStats.style.display = 'block';
+   monsterStats.style.display = "block";
+   monsterName.innerText = monsters[fighting].name;
+   monsterHealthText.innerText = monsterHealth;
 }
 /*Step 114
 At the end of your code, create two empty functions named attack and dodge.*/
