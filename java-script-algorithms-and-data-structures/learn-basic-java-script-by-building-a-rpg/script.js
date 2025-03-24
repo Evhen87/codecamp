@@ -645,8 +645,10 @@ function fightDragon() {
 }
 /*Step 111
 Fighting each type of monster will use similar logic. Create an empty function called goFight to manage this logic.*/
+/*Step 116
+In the goFight function, call your update function with the fourth object in locations as an argument.*/
 function goFight() {
-
+   update(locations[3]);
 }
 /*Step 114
 At the end of your code, create two empty functions named attack and dodge.*/
