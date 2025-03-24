@@ -640,3 +640,11 @@ Fighting each type of monster will use similar logic. Create an empty function c
 function goFight() {
 
 }
+/*Step 114
+At the end of your code, create two empty functions named attack and dodge.*/
+function attack() {
+
+}
+function dodge() {
+
+}
