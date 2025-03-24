@@ -382,9 +382,13 @@ Now that your "store" and "cave" locations are complete, you can code the action
 For example, here is how you would set num equal to 5 less than num: num = num - 5;.*/
 /*Step 74
 After the gold is updated, add a line to set health equal to health plus 10.*/
+/*Step 75
+There is a shorthand way to add or subtract from a variable called compound assignment. For example, changing num = num + 5 to compound assignment would look like num += 5.
+
+Update both lines inside your buyHealth function to use compound assignment.*/
 function buyHealth() {
-   gold = gold - 10;
-   health = health + 10;
+   gold -= 10;
+   health += 10;
 }
 function buyWeapon() {
 }
