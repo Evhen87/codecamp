@@ -299,11 +299,12 @@ Now your update function needs to use the argument you pass into it.
 Inside the update function, change the value of the button1.innerText assignment to be location["button text"]. That way, you use bracket notation to get the "button text" property of the location object passed into the function.*/
 /*Step 65
 location["button text"] is an array with three elements. Change the button1.innerText assignment to be location["button text"][0] which represents the first element of the array.*/
-
+/*Step 66
+Now update button2.innerText and button3.innerText to be assigned the second and third values of the "button text" array, respectively.*/
 function update(location) {
    button1.innerText = location["button text"][0];
-   button2.innerText = "Go to cave";
-   button3.innerText = "Fight dragon";
+   button2.innerText = location["button text"][1];
+   button3.innerText = location["button text"][2];
    button1.onclick = goStore;
    button2.onclick = goCave;
    button3.onclick = fightDragon;
