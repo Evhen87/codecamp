@@ -303,6 +303,13 @@ location["button text"] is an array with three elements. Change the button1.inne
 Now update button2.innerText and button3.innerText to be assigned the second and third values of the "button text" array, respectively.*/
 /*Step 67
 Following the same pattern as you did for the button text, update the three buttons' onclick assignments to be the first, second, and third values of the "button functions" array.*/
+/*Step 68
+Finally, update the text.innerText assignment to equal the text from the location object. However, instead of using bracket notation, use dot notation.
+
+Here is an example of accessing the name property of an object called person:
+
+Example Code
+person.name*/
 function update(location) {
    button1.innerText = location["button text"][0];
    button2.innerText = location["button text"][1];
@@ -310,7 +317,7 @@ function update(location) {
    button1.onclick = location["button functions"][0];
    button2.onclick = location["button functions"][1];
    button3.onclick = location["button functions"][2];
-   text.innerText = "You are in the town square. You see a sign that says \"Store\".";
+   text.innerText = location.text;
 }
 /*Step 61
 Instead of assigning the innerText and onclick properties to specific strings and functions, the update function will use data from the location that is passed into it. First, that data needs to be passed.
