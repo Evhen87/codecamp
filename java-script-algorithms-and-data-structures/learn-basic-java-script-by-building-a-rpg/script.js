@@ -567,9 +567,12 @@ function buyWeapon() {
 Create an empty sellWeapon function.*/
 /*Step 103
 Players should not be able to sell their only weapon. Inside the sellWeapon function, add an if statement with a condition that checks if the length of the inventory array is greater than 1.*/
+/*Step 104
+Inside the if statement, set gold equal to 15 more than its current value. Also update goldText.innerText to the new value.*/
 function sellWeapon() {
    if (inventory.length > 1) {
-
+      gold += 15;
+      goldText.innerText = gold;
    }
 }
 /*Step 70
