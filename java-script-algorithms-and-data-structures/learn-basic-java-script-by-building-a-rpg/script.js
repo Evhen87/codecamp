@@ -133,12 +133,20 @@ Give your empty button text array three string elements. Use the three strings b
 Create another property in your object called button functions. Give this property an array containing the three functions assigned to the onclick properties in the goTown function. Remember that these functions are variables, not strings, and should not be wrapped in quotes.*/
 /*Step 58
 Add one final property to the object named text. Give this property the same string value as the one assigned to text.innerText in the goTown function.*/
+/*Step 59
+//Add a second object to your locations array (remember to separate them with a comma). Following the pattern you used in the first object, create the same properties but use the values from the goStore function. Set the name property to store.*/
 const locations = [
    {
       name: "town square",
       "button text": ["Go to store", "Go to cave", "Fight dragon"],
       "button functions": [goStore, goCave, fightDragon],
       text: "You are in the town square. You see a sign that says \"Store\"."
+   },
+   {
+      name: "store",
+      "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
+      "button functions": [buyHealth, buyWeapon, goTown],
+      text: "You enter the store."
    }
 ];
 /*Step 48
