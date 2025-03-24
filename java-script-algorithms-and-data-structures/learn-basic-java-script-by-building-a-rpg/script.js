@@ -563,6 +563,11 @@ function buyWeapon() {
       button2.onclick = sellWeapon;
    }
 }
+/*Step 102
+Create an empty sellWeapon function.*/
+function sellWeapon() {
+
+}
 /*Step 70
 Create two more empty functions named fightSlime and fightBeast. These functions will be used in your upcoming cave object.*/
 function fightSlime() {
