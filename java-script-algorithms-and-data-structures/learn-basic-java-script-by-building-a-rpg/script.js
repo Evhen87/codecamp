@@ -385,7 +385,12 @@ Here is an example of accessing the name property of an object called person:
 
 Example Code
 person.name*/
+/*Step 136
+After a monster is defeated, the monster's stat box should no longer display.
+
+On the first line of the update function, use monsterStats.style.display to change the display value to none.*/
 function update(location) {
+   monsterStats.style.display = "none";
    button1.innerText = location["button text"][0];
    button2.innerText = location["button text"][1];
    button3.innerText = location["button text"][2];
