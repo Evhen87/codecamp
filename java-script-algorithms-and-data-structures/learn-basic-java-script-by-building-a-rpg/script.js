@@ -192,6 +192,8 @@ Change the double quotes around the string "The monster screams Arg! as it dies.
 In the locations array, add another object at the end. Set the name property to "lose", set "button text" to an array with three "REPLAY?" strings, set "button functions" to an array with three restart variables, and set text to "You die. &#x2620;".
 
 In a later step, you will update the code for the &#x2620; emoticon text to properly display on the page.*/
+/*Step 143Passed
+Add another object in the locations array. Everything should be the same as the lose object, except the name should be "win" and the text should be "You defeat the dragon! YOU WIN THE GAME! &#x1F389;".*/
 const locations = [
    {
       name: "town square",
@@ -232,6 +234,12 @@ const locations = [
       "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
       "button functions": [restart, restart, restart],
       text: "You die. &#x2620;"
+   },
+   {
+      name: "win",
+      "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+      "button functions": [restart, restart, restart],
+      text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
    }
 ];
 /*Step 48
