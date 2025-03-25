@@ -399,6 +399,18 @@ person.name*/
 After a monster is defeated, the monster's stat box should no longer display.
 
 On the first line of the update function, use monsterStats.style.display to change the display value to none.*/
+/*Step 141
+In order for the &#x2620; emoticon text to properly display on the page, you will need to use the innerHTML property.
+
+The innerHTML property allows you to access or modify the content inside an HTML element using JavaScript.
+
+Here is an example of updating the content for this paragraph element using the innerHTML property.
+
+Example Code
+<p id="demo">This is a paragraph.</p>
+Example Code
+document.querySelector("#demo").innerHTML = "Hello, innerHTML!";
+In the update function, change text.innerText to text.innerHTML.*/
 function update(location) {
    monsterStats.style.display = "none";
    button1.innerText = location["button text"][0];
@@ -407,7 +419,7 @@ function update(location) {
    button1.onclick = location["button functions"][0];
    button2.onclick = location["button functions"][1];
    button3.onclick = location["button functions"][2];
-   text.innerText = location.text;
+   text.innerHTML = location.text;
 }
 /*Step 61
 Instead of assigning the innerText and onclick properties to specific strings and functions, the update function will use data from the location that is passed into it. First, that data needs to be passed.
