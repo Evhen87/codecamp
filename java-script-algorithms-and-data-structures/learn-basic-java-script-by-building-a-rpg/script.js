@@ -795,6 +795,11 @@ In the lose function, call the update function and pass in the sixth object of y
 function lose() {
    update(locations[5]);
 }
+function winGame() {
+   update(locations[6]);
+}
+/*Step 142
+After the lose function, create a function called winGame. Inside the winGame function, call the update function and pass in locations[6].*/
 /*Step 138
 At the end of your code, create a restart function. Inside this function, set xp to 0, health to 100, gold to 50, currentWeaponIndex to 0, and set inventory to an array with the string stick.
 
