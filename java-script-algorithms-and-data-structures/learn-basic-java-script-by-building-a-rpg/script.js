@@ -679,10 +679,15 @@ Now you can build the attack function. First, update the text message to say "Th
 On a new line, use the addition assignment operator(+=), to add the string " You attack it with your <weapon>." to the text value, replacing <weapon> with the player's current weapon. Additionally, remember that this line of text starts with a space so it will properly display.*/
 /*Step 122
 Next, set health to equal health minus the monster's level. Remember you can get this from the monsters[fighting].level property.*/
+/*Step 123
+Set monsterHealth to monsterHealth minus the power of the player's current weapon.
+
+Remember that you can access the power of the player's current weapon using weapons[currentWeaponIndex].power.*/
 function attack() {
    text.innerText = "The " + monsters[fighting].name + " attacks.";
    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
    health -= monsters[fighting].level;
+   monsterHealth -= weapons[currentWeaponIndex].power;
 }
 function dodge() {
 
