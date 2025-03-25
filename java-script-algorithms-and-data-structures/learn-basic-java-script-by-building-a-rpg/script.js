@@ -691,6 +691,8 @@ Using these, you can generate a random number within a range. For example, this 
 Following this pattern, use the addition operator (+) to add a random number between 1 and the value of xp to your monsterHealth -= weapons[currentWeaponIndex].power.*/
 /*Step 125
 Update healthText.innerText and monsterHealthText.innerText to equal health and monsterHealth.*/
+/*Step 126
+Add an if statement to check if health is less than or equal to 0. If it is, call the lose function.*/
 function attack() {
    text.innerText = "The " + monsters[fighting].name + " attacks.";
    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
@@ -698,6 +700,9 @@ function attack() {
    monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
    healthText.innerText = health;
    monsterHealthText.innerText = monsterHealth;
+   if (health <= 0) {
+      lose()
+   }
 }
 function dodge() {
 
