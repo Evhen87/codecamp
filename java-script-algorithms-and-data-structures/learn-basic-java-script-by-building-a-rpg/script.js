@@ -971,6 +971,19 @@ for loops are declared with three expressions separated by semicolons: for (a; b
 In this step, create a for loop where i is initialized to 0, the loop runs as long as i is less than 10, and i is incremented by 1 after each iteration using the increment operator ++.*/
 /*Step 168
 Now you can write the logic to run in the loop. Inside your for loop, use the += operator to add to the end of text.innerText. Add the number at index i of the numbers array, using numbers[i]. Then add a new line, using the escape sequence you used earlier.*/
+/*Step 169
+The .includes() method determines if an array contains an element and will return either true or false.
+
+Here is an example of the .includes() syntax:
+
+Example Code
+const numbersArray = [1, 2, 3, 4, 5]
+const number = 3
+
+if (numbersArray.includes(number)) {
+  console.log("The number is in the array.")
+}
+After your for loop, add an if statement to check if the guess is in the numbers array. You can use the .includes() method to check if the array contains the guess.*/
 function pick(guess) {
    const numbers = [];
    while (numbers.length < 10) {
@@ -978,6 +991,9 @@ function pick(guess) {
    }
    text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
    for (let i = 0; i < 10; i++) {
-      text.innerText += numbers[i] + "\n"
+      text.innerText += numbers[i] + "\n";
+   }
+   if (numbers.includes(guess)) {
+
    }
 }
