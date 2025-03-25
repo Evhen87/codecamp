@@ -689,11 +689,15 @@ The Math object in JavaScript contains static properties and methods for mathema
 Using these, you can generate a random number within a range. For example, this generates a random number between 1 and 5: Math.floor(Math.random() * 5) + 1;.
 
 Following this pattern, use the addition operator (+) to add a random number between 1 and the value of xp to your monsterHealth -= weapons[currentWeaponIndex].power.*/
+/*Step 125
+Update healthText.innerText and monsterHealthText.innerText to equal health and monsterHealth.*/
 function attack() {
    text.innerText = "The " + monsters[fighting].name + " attacks.";
    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
    health -= monsters[fighting].level;
    monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
+   healthText.innerText = health;
+   monsterHealthText.innerText = monsterHealth;
 }
 function dodge() {
 
