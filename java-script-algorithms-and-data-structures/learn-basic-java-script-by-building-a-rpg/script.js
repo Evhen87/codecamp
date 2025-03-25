@@ -788,9 +788,18 @@ The attack of the monster will be based on the monster's level and the player's 
 This will set the monster's attack to five times their level minus a random number between 0 and the player's xp.*/
 /*Step 147
 Log the value of hit to the console to use in debugging. Remember that you can do this with console.log().*/
+/*Step 148
+In the previous project, you learned how to work with the return keyword to return a value from a function like this:
+
+Example Code
+function add(num1, num2) {
+  return num1 + num2;
+}
+Use the return keyword to return the value of hit at the end of the function.*/
 function getMonsterAttackValue(level) {
    const hit = (level * 5) - (Math.floor(Math.random() * xp));
    console.log(hit);
+   return hit;
 }
 function dodge() {
    text.innerText = "You dodge the attack from the " + monsters[fighting].name
