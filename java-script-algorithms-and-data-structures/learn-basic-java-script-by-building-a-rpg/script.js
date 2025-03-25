@@ -764,6 +764,8 @@ Inside your attack function, change your health -= monsters[fighting].level; lin
 In your attack function, find the line of code that updates the monsterHealth variable and place it within an if block with a condition that calls the isMonsterHit function.*/
 /*Step 151
 Add an else statement to the first if statement inside your attack() function. In the else statement, use the += operator to add the text " You miss." to the end of text.innerText.*/
+/*Step 154
+On every attack, there should be a chance that the player's weapon breaks. At the end of the attack function, add an empty if statement with the condition Math.random() <= .1.*/
 function attack() {
    text.innerText = "The " + monsters[fighting].name + " attacks.";
    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
@@ -783,6 +785,8 @@ function attack() {
       } else {
          defeatMonster();
       }
+   }
+   if (Math.random() <= .1) {
 
    }
 }
