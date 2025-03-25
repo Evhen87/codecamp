@@ -188,6 +188,10 @@ Add a new object at the end of the locations array, following the same structure
 The word "Arg!" should have quotes around it. Besides escaping quotes, there is another way you can include quotation marks inside a string.
 
 Change the double quotes around the string "The monster screams Arg! as it dies. You gain experience points and find gold." to single quotes ', then add double quotes around "Arg!".*/
+/*Step 139
+In the locations array, add another object at the end. Set the name property to "lose", set "button text" to an array with three "REPLAY?" strings, set "button functions" to an array with three restart variables, and set text to "You die. &#x2620;".
+
+In a later step, you will update the code for the &#x2620; emoticon text to properly display on the page.*/
 const locations = [
    {
       name: "town square",
@@ -222,6 +226,12 @@ const locations = [
       "button text": ["Go to town square", "Go to town square", "Go to town square"],
       "button functions": [goTown, goTown, goTown],
       text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+   },
+   {
+      name: "lose",
+      "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+      "button functions": [restart, restart, restart],
+      text: "You die. &#x2620;"
    }
 ];
 /*Step 48
@@ -722,6 +732,10 @@ if (num > 10) {
 
 }
 At the end of your if statement, add an else if statement to check if monsterHealth is less than or equal to 0. In your else if, call the defeatMonster function.*/
+/*Step 140
+Back to your attack function - inside the else if block, create another if and else statement. If the player is fighting the dragon (fighting would be 2), call the winGame function. Move the defeatMonster() call to the else block.
+
+For this step, you will need to use the strict equality (===) operator to check if fighting is equal to 2.*/
 function attack() {
    text.innerText = "The " + monsters[fighting].name + " attacks.";
    text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
@@ -732,7 +746,12 @@ function attack() {
    if (health <= 0) {
       lose()
    } else if (monsterHealth <= 0) {
-      defeatMonster();
+      if (fighting === 2) {
+         winGame()
+      } else {
+         defeatMonster();
+      }
+
    }
 }
 /*Step 129
