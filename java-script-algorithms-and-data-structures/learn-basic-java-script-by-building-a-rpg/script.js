@@ -759,4 +759,25 @@ function defeatMonster() {
    xpText.innerText = xp;
    update(locations[4]);
 }
-function lose() { }
+/*Step 137
+In the lose function, call the update function and pass in the sixth object of your locations array. Note that you haven't created this object just yet.*/
+function lose() {
+   update(locations[5]);
+}
+/*Step 138
+At the end of your code, create a restart function. Inside this function, set xp to 0, health to 100, gold to 50, currentWeaponIndex to 0, and set inventory to an array with the string stick.
+
+Also update the innerText properties of goldText, healthText, and xpText to their current values.
+
+Finally, call the goTown() function.*/
+function restart() {
+   xp = 0;
+   health = 100;
+   gold = 50;
+   currentWeaponIndex = 0;
+   inventory = ["stick"];
+   goldText.innerText = gold;
+   healthText.innerText = health;
+   xpText.innerText = xp;
+   goTown();
+}
