@@ -180,6 +180,10 @@ const monsters = [
 ];
 /*Step 115
 Add a new object to the end of the locations array, following the same properties as the rest of the objects. Set name to "fight", "button text" to an array with "Attack", "Dodge", and "Run", "button functions" to an array with attack, dodge, and goTown, and text to "You are fighting a monster.".*/
+/*Step 134
+Your locations array doesn't have a fifth element, so locations[4] doesn't work.
+
+Add a new object at the end of the locations array, following the same structure as the other objects. Set name to "kill monster", set "button text" to an array with three "Go to town square" strings, set "button functions" to an array with three goTown variables, and set text to "The monster screams Arg! as it dies. You gain experience points and find gold.".*/
 const locations = [
    {
       name: "town square",
@@ -208,6 +212,12 @@ const locations = [
       "button text": ["Attack", "Dodge", "Run"],
       "button functions": [attack, dodge, goTown],
       text: "You are fighting a monster."
+   },
+   {
+      name: "kill monster",
+      "button text": ["Go to town square", "Go to town square", "Go to town square"],
+      "button functions": [goTown, goTown, goTown],
+      text: "The monster screams Arg! as it dies. You gain experience points and find gold."
    }
 ];
 /*Step 48
