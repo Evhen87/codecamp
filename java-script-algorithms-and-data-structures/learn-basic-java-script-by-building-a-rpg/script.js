@@ -922,3 +922,8 @@ Create a new function called easterEgg which calls the update function with loca
 function easterEgg() {
    update(locations[7]);
 }
+/*Step 159
+Create an empty pick function with a parameter named guess.*/
+function pick(guess) {
+
+}
