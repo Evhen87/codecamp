@@ -184,6 +184,10 @@ Add a new object to the end of the locations array, following the same propertie
 Your locations array doesn't have a fifth element, so locations[4] doesn't work.
 
 Add a new object at the end of the locations array, following the same structure as the other objects. Set name to "kill monster", set "button text" to an array with three "Go to town square" strings, set "button functions" to an array with three goTown variables, and set text to "The monster screams Arg! as it dies. You gain experience points and find gold.".*/
+/*Step 135
+The word "Arg!" should have quotes around it. Besides escaping quotes, there is another way you can include quotation marks inside a string.
+
+Change the double quotes around the string "The monster screams Arg! as it dies. You gain experience points and find gold." to single quotes ', then add double quotes around "Arg!".*/
 const locations = [
    {
       name: "town square",
@@ -217,7 +221,7 @@ const locations = [
       name: "kill monster",
       "button text": ["Go to town square", "Go to town square", "Go to town square"],
       "button functions": [goTown, goTown, goTown],
-      text: "The monster screams Arg! as it dies. You gain experience points and find gold."
+      text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
    }
 ];
 /*Step 48
