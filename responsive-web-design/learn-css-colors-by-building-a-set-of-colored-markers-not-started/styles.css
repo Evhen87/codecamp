@@ -11,3 +11,18 @@ Create a new CSS rule that targets the h1 element, and set its text-align proper
 h1 {
    text-align: center;
 }
+/*Step 11
+It's time to add some color to the marker. Remember that one way to add color to an element is to use a color keyword like black, cyan, or yellow.
+
+As a reminder, here's how to target the class freecodecamp:
+
+Example Code
+.freecodecamp {
+  
+}
+Create a new CSS rule that targets the class marker, and set its background-color property to red.
+
+Note: You will not see any changes after adding the CSS.*/
+.marker {
+   background-color: red;
+}
