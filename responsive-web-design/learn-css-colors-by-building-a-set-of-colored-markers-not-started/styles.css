@@ -72,6 +72,12 @@ For the rgb function in the .container rule, set the red, green, and blue values
    width: 200px;
    margin: 10px auto;
 }
+/*Step 77
+Create a new CSS rule to target the class cap. In the new rule, set the width property to 60px, and the height to 25px.*/
+.cap {
+  width: 60px;
+  height: 25px;
+}
 /*Step 71
 Create a new CSS rule that targets the class sleeve. Set the width property to 110px, and the height property to 25px.*/
 /*Step 72
