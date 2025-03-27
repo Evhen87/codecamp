@@ -116,12 +116,19 @@ In the .sleeve CSS rule, add the border-left-width property with the value 10px.
 Borders have several styles to choose from. You can make your border a solid line, but you can also use a dashed or dotted line if you prefer. Solid border lines are probably the most common.
 
 In the .sleeve CSS rule, add the border-left-style property with the value solid.*/
+/*Step 81
+Your border should be visible now. If no color is set, black is used by default.
+
+But to make your code more readable, it's better to set the border color explicitly.
+
+In the .sleeve CSS rule, add the border-left-color property with the value black.*/
 .sleeve {
    width: 110px;
    height: 25px;
    background-color: rgba(255, 255, 255, 0.5);
    border-left-width: 10px;
    border-left-style: solid;
+   border-left-color: black;
  }
  /*Step 78
 It looks like your sleeve disappeared, but don't worry -- it's still there. What happened is that your new cap div is taking up the entire width of the marker, and is pushing the sleeve down to the next line.
