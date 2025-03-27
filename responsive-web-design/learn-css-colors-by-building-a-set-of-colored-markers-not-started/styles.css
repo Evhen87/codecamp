@@ -105,8 +105,12 @@ In the additive RGB color model, primary colors are colors that, when combined, 
 Before you combine colors, set your green marker back to pure green. For the rgb function in the .two CSS rule, set green back to the max value of 255.*/
 /*Step 29
 To create the next secondary color, cyan, update the rgb function in the .two CSS rule to combine pure green and pure blue.*/
+/*Step 32
+Notice that, to create orange, you had to increase the intensity of red and decrease the intensity of the green rgb values. This is because orange is the combination of red and yellow.
+
+To create the tertiary color spring green, combine cyan with green. Update the rgb function in the .two CSS rule so that green is at the max value, and set blue to 127.*/
 .two {
-   background-color: rgb(0, 255, 255);
+   background-color: rgb(0, 255, 127);
  }
  
  /*Step 30
