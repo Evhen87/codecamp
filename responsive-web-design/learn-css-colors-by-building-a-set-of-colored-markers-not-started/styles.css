@@ -39,8 +39,9 @@ While you have three separate marker div elements, they look like one big rectan
 When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.
 
 In your .marker CSS rule, set the margin property to 10px auto.*/
+/*Step 17
+Next, remove the background-color property and its value from the .marker CSS rule.*/
 .marker {
-   background-color: red;
    height: 25px;
    width: 200px;
    margin: 10px auto;
