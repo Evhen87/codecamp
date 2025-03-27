@@ -178,8 +178,12 @@ Even without the color-stops, you might have noticed that the colors for the gre
 The linear-gradient function automatically calculates these values for you, and places colors evenly along the gradient line by default.
 
 In the .red CSS rule, remove the three color stops from the linear-gradient function to clean up your code a bit.*/
+/*Step 65
+If no gradientDirection argument is provided to the linear-gradient function, it arranges colors from top to bottom, or along a 180 degree line, by default.
+
+Clean up your code a little more by removing the gradientDirection argument from both linear-gradient functions.*/
 .red {
-   background: linear-gradient(180deg, rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+   background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
  }
 /*Step 20
 Create a CSS rule that targets the class two and set its background-color property to green.
@@ -240,7 +244,7 @@ That's looking better, but the bottom edge of the green marker needs to be darke
 
 In the same linear-gradient function, add a hex color code with the values 11 for red, 6C for green, and 31 for blue as the third color argument.*/
 .green {
-   background: linear-gradient(180deg, #55680D, #71F53E, #116C31);
+   background: linear-gradient(#55680D, #71F53E, #116C31);
  }
  
  /*Step 30
