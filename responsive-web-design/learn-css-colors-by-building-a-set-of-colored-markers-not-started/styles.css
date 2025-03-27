@@ -223,8 +223,12 @@ Lower the intensity of green by setting the green value of the hex color to 7F.*
 The red marker is looking much more realistic. Now you'll do the same for the green marker, using a combination of the linear-gradient function and hex colors.
 
 In the .green CSS rule, change the background-color property to background.*/
+/*Step 61
+For this marker, you'll use hex color codes for your gradient.
+
+Use the linear-gradient function and set gradientDirection to 180deg. And for the first color argument, use a hex color code with the values 55 for red, 68 for green, and 0D for blue.*/
 .green {
-   background: #007F00;
+   background: linear-gradient(180deg, #55680D 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);
  }
  
  /*Step 30
