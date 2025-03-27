@@ -110,7 +110,9 @@ Two colors that are opposite from each other on the color wheel are called compl
 In the rgb function for the .one CSS rule, set the red value to the max of 255 to produce pure red. In the rgb function for .two CSS rule, set the values for green and blue to the max of 255 to produce cyan.*/
 /*Step 38
 Next, in the .one CSS rule, use the rgb function to set the background-color to black. And in the .two CSS rule, use the rgb function to set the background-color to red.*/
-.one {
+/*Step 42
+Update the .one CSS rule to target the new red class.*/
+.red {
    background-color: rgb(0, 0, 0);
 }
 /*Step 20
