@@ -293,9 +293,13 @@ Update the values for the box-shadow property, and set offsetX to -5px, and offs
 Now that you're familiar with the box-shadow property you can finalize the shadows, starting with the one for the red marker.
 
 In the .red CSS rule, update the values for the box-shadow property so offsetX is 0,offsetY is 0, blurRadius is 20px, spreadRadius is 0, and color is red. Remember that you don't need to add units to a zero value.*/
+/*Step 91
+Next, update the color value of the red marker's box-shadow property.
+
+Replace the named color with the rgba function. Use the values 83 for red, 14 for green, 14 for blue and 0.8 for the alpha channel.*/
 .red {
    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-   box-shadow: 0 0 20px 0 red;
+   box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
  }
 /*Step 20
 Create a CSS rule that targets the class two and set its background-color property to green.
