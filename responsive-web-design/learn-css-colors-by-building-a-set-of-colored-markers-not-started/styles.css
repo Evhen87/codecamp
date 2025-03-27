@@ -414,7 +414,11 @@ Like blurRadius, spreadRadius defaults to 0 if it isn't included.
 Practice by adding a 5 pixel shadow directly around the blue marker.
 
 In the .blue CSS rule, add the box-shadow property with the values 0 for offsetX, 0 for offsetY, 0 for blurRadius, 5px for spreadRadius, and blue for color.*/
+/*Step 94
+Finally, for the blue marker's box-shadow property, replace the named color with the hsla function. Use the values 223 for hue, 59% for saturation, 31% for lightness, and 0.8 for the alpha channel.
+
+And with that, your set of colored markers is complete! Well done.*/
 .blue {
    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-   box-shadow: 0 0 20px 0 blue;
+   box-shadow: 0 0 20px 0 hsl(223, 59%, 31%, 0.8);
  }
