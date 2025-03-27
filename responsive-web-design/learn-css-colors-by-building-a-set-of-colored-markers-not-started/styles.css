@@ -112,8 +112,10 @@ In the rgb function for the .one CSS rule, set the red value to the max of 255 t
 Next, in the .one CSS rule, use the rgb function to set the background-color to black. And in the .two CSS rule, use the rgb function to set the background-color to red.*/
 /*Step 42
 Update the .one CSS rule to target the new red class.*/
+/*Step 43
+And update the rgb function in the .red CSS rule so that the red value is at the max.*/
 .red {
-   background-color: rgb(0, 0, 0);
+   background-color: rgb(255, 0, 0);
 }
 /*Step 20
 Create a CSS rule that targets the class two and set its background-color property to green.
