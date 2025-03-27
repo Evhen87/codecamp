@@ -115,6 +115,8 @@ To create the tertiary color spring green, combine cyan with green. Update the r
  
  /*Step 30
 To create the final secondary color, magenta, update the rgb function in the .three CSS rule to combine pure blue and pure red.*/
- .three {
-   background-color: rgb(255, 0, 255);
+ /*Step 33
+And to create the tertiary color violet, combine magenta with blue. Update the rgb function in the .three CSS rule so that blue is at the max value, and set red to 127.*/
+.three {
+   background-color: rgb(127, 0, 255);
  }
