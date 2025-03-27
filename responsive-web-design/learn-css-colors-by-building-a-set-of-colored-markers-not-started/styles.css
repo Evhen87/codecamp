@@ -114,6 +114,8 @@ Next, in the .one CSS rule, use the rgb function to set the background-color to 
 Update the .one CSS rule to target the new red class.*/
 /*Step 43
 And update the rgb function in the .red CSS rule so that the red value is at the max.*/
+/*Step 45
+Update the CSS class selector .two so it targets the new green class. And update the .three class selector so it targets the new blue class.*/
 .red {
    background-color: rgb(255, 0, 0);
 }
@@ -147,7 +149,7 @@ Notice how your eyes are naturally drawn to the red color in the center? When de
 There are several other important color combinations outside of complementary colors, but you'll learn those a bit later.
 
 For now, use the rgb function in the .two CSS rule to set the background-color to black.*/
-.two {
+.green {
    background-color: rgb(0, 0, 0);
  }
  
@@ -155,6 +157,6 @@ For now, use the rgb function in the .two CSS rule to set the background-color t
 To create the final secondary color, magenta, update the rgb function in the .three CSS rule to combine pure blue and pure red.*/
  /*Step 33
 And to create the tertiary color violet, combine magenta with blue. Update the rgb function in the .three CSS rule so that blue is at the max value, and set red to 127.*/
-.three {
+.blue {
    background-color: rgb(0, 0, 0);
  }
