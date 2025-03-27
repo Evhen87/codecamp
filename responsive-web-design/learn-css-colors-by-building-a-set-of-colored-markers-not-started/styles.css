@@ -219,8 +219,12 @@ Example Code
 With hex colors, 00 is 0% of that color, and FF is 100%. So #00FF00 translates to 0% red, 100% green, and 0% blue, and is the same as rgb(0, 255, 0).
 
 Lower the intensity of green by setting the green value of the hex color to 7F.*/
+/*Step 60
+The red marker is looking much more realistic. Now you'll do the same for the green marker, using a combination of the linear-gradient function and hex colors.
+
+In the .green CSS rule, change the background-color property to background.*/
 .green {
-   background-color: #007F00;
+   background: #007F00;
  }
  
  /*Step 30
