@@ -72,10 +72,16 @@ In the .one CSS rule, replace the color keyword red with the rgb function. For t
 Create a CSS rule that targets the class two and set its background-color property to green.
 
 Also, create a separate CSS rule that targets the class three and set its background-color to blue.*/
+/*Step 23
+Notice that the background-color for your marker is still red. This is because you set the red value of the rgb function to the max of 255, or 100% red, and set both the green and blue values to 0.
+
+Now use the rgb function to set the other colors.
+
+In the .two CSS rule, use the rgb function to set the background-color to the max value for green, and 0 for the other values. And in the .three CSS rule, use the rgb function to set the background-color to the max value for blue, and 0 for the other values.*/
 .two {
-   background-color: green;
+   background-color: rgb(0, 255, 0);
  }
  
  .three {
-   background-color: blue;
+   background-color: rgb(0, 0, 255);
  }
