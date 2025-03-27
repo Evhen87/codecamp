@@ -78,8 +78,12 @@ In the .one CSS rule, replace the color keyword red with the rgb function. For t
 Secondary colors are the colors you get when you combine primary colors. You might have noticed some secondary colors in the last step as you changed the red, green, and blue values.
 
 To create the first secondary color, yellow, update the rgb function in the .one CSS rule to combine pure red and pure green.*/
+/*Step 31
+Now that you're familiar with secondary colors, you'll learn how to create tertiary colors. Tertiary colors are created by combining a primary with a nearby secondary color.
+
+To create the tertiary color orange, update the rgb function in the .one CSS rule so that red is at the max value, and set green to 127.*/
 .one {
-   background-color: rgb(255, 255, 0);
+   background-color: rgb(255, 127, 0);
 }
 /*Step 20
 Create a CSS rule that targets the class two and set its background-color property to green.
