@@ -116,8 +116,16 @@ Update the .one CSS rule to target the new red class.*/
 And update the rgb function in the .red CSS rule so that the red value is at the max.*/
 /*Step 45
 Update the CSS class selector .two so it targets the new green class. And update the .three class selector so it targets the new blue class.*/
+/*Step 49
+You've learned a few ways to set flat colors in CSS, but you can also use a color transition, or gradient, on an element.
+
+A gradient is when one color transitions into another. The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used.
+
+One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.
+
+In the .red CSS rule, change the background-color property to background.*/
 .red {
-   background-color: rgb(255, 0, 0);
+   background: rgb(255, 0, 0);
 }
 /*Step 20
 Create a CSS rule that targets the class two and set its background-color property to green.
