@@ -27,6 +27,8 @@ Example Code
 Please fill out this form with the required information-->
 <!--Step 11
 As suggested by the title, you are creating a form. So, after the p element, insert a form element with an action attribute targeting https://register-demo.freecodecamp.org.-->
+<!--Step 13
+As the form will have three distinct sections, add three fieldset elements within the form element.-->
 
 <body>
    <h1>Registration Form</h1>
@@ -35,7 +37,11 @@ As suggested by the title, you are creating a form. So, after the p element, ins
 The method attribute specifies how to send form-data to the URL specified in the action attribute. The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post").
 
 Set the method attribute to send your form data via a POST request.-->
-   <form method="post" action="https://register-demo.freecodecamp.org"></form>
+   <form method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset></fieldset>
+      <fieldset></fieldset>
+      <fieldset></fieldset>
+   </form>
 </body>
 
 </html>
