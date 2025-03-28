@@ -94,6 +94,10 @@ Start by adding two label elements to the second fieldset.-->
 Users will be allowed to choose either a Personal or Business.
 
 To do this, within each of the first two label elements, add one input element with type="radio".-->
+      <!--Step 28
+Currently users can submit the form without checking the radio inputs. Although you previously used the required attribute to indicate that an input is required, it won't work in this case because adding required to both inputs will convey the wrong information to users.
+
+To solve this, you can provide context of what is needed by adding a legend element with text Account type (required) before the label elements within the second fieldset. Then add the checked attribute to the Personal input to ensure the form is submitted with the required data in it.-->
       <fieldset>
          <!--Step 26
 Within each corresponding label element, and immediately after the input element, add a space and add the following text:
@@ -105,8 +109,14 @@ Business -->
 You only want one radio input to be selectable at a time. However, the form does not know the radio inputs are related.
 
 To relate the radio inputs, give them the same name attribute with a value of account-type. Now, it is not possible to select both radio inputs at the same time.-->
-         <label><input type="radio" name="account-type"> Personal</label>
-         <label><input type="radio" name="account-type"> Business</label>
+         <!--Step 29
+Follow accessibility best practices by linking the input elements and the label elements in the second fieldset.
+
+Use personal-account, and business-account as values for the respective id attributes.-->
+         <legend>Account type (required)</legend>
+         <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked />
+            Personal</label>
+         <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
       </fieldset>
       <fieldset></fieldset>
       <input value="Submit" type="submit" />
