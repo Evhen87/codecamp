@@ -33,6 +33,15 @@ form {
    min-width: 300px;
    width: 60vw;
 }
+/*Step 46
+During development, it is useful to see the fieldset default borders. However, they make the content appear too separated.
+
+Remove the border, and add 2rem of padding only to the top and bottom of each fieldset. Be sure to remove the padding from the left and right.*/
+fieldset {
+   border: none;
+   padding: 2rem 0;
+   
+}
 /*Step 16
 The rem unit stands for root em, and is relative to the font size of the html element.
 
