@@ -118,7 +118,13 @@ Use personal-account, and business-account as values for the respective id attri
             Personal</label>
          <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
       </fieldset>
-      <fieldset></fieldset>
+      <!--Step 32
+Moving on to the final fieldset. What if you wanted to allow a user to upload a profile picture?
+
+Well, the input type file allows just that. Add a label with the text Upload a profile picture: , and nest an input accepting a file upload.-->
+      <fieldset>
+         <label for="">Upload a profile picture: <input type="file" name="" id=""></label>
+      </fieldset>
       <!--Step 30
 You need to confirm that the user has read the terms and conditions.
 
