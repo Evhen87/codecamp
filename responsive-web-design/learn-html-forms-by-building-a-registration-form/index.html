@@ -132,16 +132,20 @@ Now, if someone tries to submit the form with values outside of the range, a war
 Adding a dropdown to the form is easy with the select element. The select element is a container for a group of option elements, and the option element acts as a label for each dropdown option. Both elements require closing tags.
 
 Start by adding a select element below the last label element. Then nest 5 option elements within the select element.-->
+      <!--Step 35Passed
+Nest the select element (with its option elements) within a label element with the text How did you hear about us?. The text should come before the select element.-->
       <fieldset>
          <label>Upload a profile picture: <input type="file" /></label>
          <label>Input your age (years): <input type="number" min="13" max="120" /></label>
-         <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-         </select>
+         <label>How did you hear about us?
+            <select>
+               <option></option>
+               <option></option>
+               <option></option>
+               <option></option>
+               <option></option>
+            </select>
+         </label>
       </fieldset>
       <!--Step 30
 You need to confirm that the user has read the terms and conditions.
