@@ -155,6 +155,10 @@ Users will be able to register with a bio. Add a label with the text Provide a b
 Link the applicable form elements and their label elements together.
 
 Use profile-picture, age, referrer, and bio as values for the respective id attributes.-->
+      <!--Step 40
+The textarea appears too small. To give it an initial size, you can add the rows and cols attributes.
+
+Add an initial size of 3 rows and 30 columns.-->
       <fieldset>
          <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" /></label>
          <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120" /></label>
@@ -168,7 +172,7 @@ Use profile-picture, age, referrer, and bio as values for the respective id attr
             </select>
          </label>
          <label for="bio">Provide a bio:
-            <textarea id="bio"></textarea>
+            <textarea rows="3" cols="30" id="bio"></textarea>
          </label>
       </fieldset>
       <!--Step 30
