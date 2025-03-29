@@ -134,16 +134,25 @@ Adding a dropdown to the form is easy with the select element. The select elemen
 Start by adding a select element below the last label element. Then nest 5 option elements within the select element.-->
       <!--Step 35Passed
 Nest the select element (with its option elements) within a label element with the text How did you hear about us?. The text should come before the select element.-->
+      <!--Step 36
+The dropdown options are currently empty. To give them content, add the following text to each subsequent option element:
+
+Example Code
+(select one)
+freeCodeCamp News
+freeCodeCamp YouTube Channel
+freeCodeCamp Forum
+Other-->
       <fieldset>
          <label>Upload a profile picture: <input type="file" /></label>
          <label>Input your age (years): <input type="number" min="13" max="120" /></label>
          <label>How did you hear about us?
             <select>
-               <option></option>
-               <option></option>
-               <option></option>
-               <option></option>
-               <option></option>
+               <option>(select one)</option>
+               <option>freeCodeCamp News</option>
+               <option>freeCodeCamp YouTube Channel</option>
+               <option>freeCodeCamp Forum</option>
+               <option>Other</option>
             </select>
          </label>
       </fieldset>
