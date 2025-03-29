@@ -43,8 +43,16 @@ fieldset {
    border: none;
    border-bottom: 3px solid #3b3b4f;
    padding: 2rem 0;
-
 }
+/*Step 48
+The border of the last fieldset element looks a little out of place. You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+
+Example Code
+p:last-of-type { }
+That will select the last p element. Create a new selector that targets the last fieldset element and set its border-bottom to none.*/
+fieldset:last-of-type { 
+   border-bottom: none;
+ }
 /*Step 16
 The rem unit stands for root em, and is relative to the font size of the html element.
 
