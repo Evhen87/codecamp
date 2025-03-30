@@ -44,8 +44,13 @@ Write a new rule that targets .one and set its width to 425 pixels.*/
 Now set the height for .one to 150 pixels.*/
 /*Step 19
 Set the background-color of .one to #efb762.*/
+/*Step 20
+Use margins to position the .one element on the canvas.
+
+Add the shorthand margin property with a vertical margin of 20px and a horizontal margin of auto.*/
 .one {
    width: 425px;
    height: 150px;
    background-color: #efb762;
+   margin: 20px auto;
 }
