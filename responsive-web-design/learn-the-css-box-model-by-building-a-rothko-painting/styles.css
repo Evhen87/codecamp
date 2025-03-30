@@ -67,7 +67,10 @@ Add the shorthand margin property with a vertical margin of 20px and a horizonta
 Create a new CSS rule using the .two selector and set its width to 475 pixels.*/
 /*Step 25
 Set the height of the .two element to 200 pixels.*/
+/*Step 26
+Set the background-color of the .two element to #8f0401.*/
 .two {
    width: 475px;
    height: 200px;
+   background-color: #8f0401;
  }
