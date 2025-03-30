@@ -40,6 +40,9 @@ Using the margin property, give the .frame element vertical margin of 20px, and 
 }
 /*Step 17
 Write a new rule that targets .one and set its width to 425 pixels.*/
+/*Step 18
+Now set the height for .one to 150 pixels.*/
 .one {
    width: 425px;
+   height: 150px;
 }
