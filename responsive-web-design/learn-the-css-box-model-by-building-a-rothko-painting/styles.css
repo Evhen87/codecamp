@@ -20,6 +20,11 @@ Change the background-color of the canvas to #4d0f00.*/
 Write a new rule using the .frame class selector.
 
 Use the border shorthand declaration to give the .frame element a solid, black border with a width of 50px.*/
+/*Step 13
+The frame is much too wide.
+
+In .frame, set its width to 500 pixels.*/
 .frame {
    border: solid 50px black;
+   width: 500px;
 }
