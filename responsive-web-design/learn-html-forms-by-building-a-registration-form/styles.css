@@ -121,12 +121,17 @@ Use the same technique used to center the form to center the submit button.*/
 To make the submit button look more in line with the rest of the form, give it the same height as the other fields (2em). Also, increase the font-size to 1.1rem.*/
 /*Step 60
 To make the submit button appear more distinct, give it a background-color of #3b3b4f, and a border-color of white.*/
+/*Step 61
+Lastly, for the submit button, you want to separate it from the fieldset above, and adjust its width to never be below 300px.
+
+Change the margin property to include 1em on the top and bottom, while leaving the right and left margins set to auto. Then set the width as described above.*/
 input[type="submit"] {
    display: block;
-   width: 60%;
-   margin: 0 auto;
-   height: 2em;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
   font-size: 1.1rem;
-  background-color: #3b3b4f; 
+  background-color: #3b3b4f;
   border-color: white;
+  min-width: 300px;
 }
