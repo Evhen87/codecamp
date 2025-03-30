@@ -10,6 +10,10 @@ That is better. Now, make the background easy on the eyes, by changing the body 
 The HTML for the registration form is finished. Now, you can spruce it up a bit.
 
 Start by adding Tahoma as the font with a font size of 16px in the body selector.*/
+/*Step 56
+You want the select element to remain with a white background, but now it is not getting the same min-height as the input and textarea elements.
+
+Move the min-height property and value so that all three element types have the same min-height value, and the select element still has a white background.*/
 body {
    width: 100%;
    height: 100vh;
@@ -73,7 +77,9 @@ input, textarea, select {
   margin-bottom: 0;
    margin-left: 0;
    margin-right: 0;
+   min-height: 2em;
 }
+
 /*Step 51
 Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%.*/
 /*Step 52
@@ -92,7 +98,7 @@ input, textarea {
    background-color: #0a0a23;
    border: 1px, solid #0a0a23;
    color: #ffffff;
-  min-height: 2em;
+
  }
 .inline {
    width: unset; 
