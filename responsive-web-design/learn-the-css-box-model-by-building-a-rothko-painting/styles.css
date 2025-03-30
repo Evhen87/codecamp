@@ -11,10 +11,15 @@ Example Code
 Add the height property with the value 600px to your .canvas rule.*/
 /*Step 10
 Change the background-color of the canvas to #4d0f00.*/
+/*Step 21
+Now .one is centered horizontally, but its top margin is pushing past the canvas and onto the frame's border, shifting the entire canvas down 20 pixels.
+
+Add padding of 1px to the .canvas element to give the .one element something solid to push off of.*/
 .canvas {
    width: 500px;
    height: 600px;
    background-color: #4d0f00;
+   padding: 1px;
  }
  /*Step 12
 Write a new rule using the .frame class selector.
