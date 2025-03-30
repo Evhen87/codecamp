@@ -69,8 +69,11 @@ Create a new CSS rule using the .two selector and set its width to 475 pixels.*/
 Set the height of the .two element to 200 pixels.*/
 /*Step 26
 Set the background-color of the .two element to #8f0401.*/
+/*Step 27
+Center the .two element by setting its margin to auto.*/
 .two {
    width: 475px;
    height: 200px;
    background-color: #8f0401;
+   margin: auto;
  }
