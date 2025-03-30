@@ -113,10 +113,16 @@ To relate the radio inputs, give them the same name attribute with a value of ac
 Follow accessibility best practices by linking the input elements and the label elements in the second fieldset.
 
 Use personal-account, and business-account as values for the respective id attributes.-->
+         <!--Step 50
+For the second fieldset, you want the input and label text to appear on the same line.
+
+Start, by giving the input elements in the second fieldset a class of inline.-->
          <legend>Account type (required)</legend>
-         <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked />
+         <label for="personal-account"><input class="inline" id="personal-account" type="radio" name="account-type"
+               checked />
             Personal</label>
-         <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
+         <label for="business-account"><input class="inline" id="business-account" type="radio" name="account-type" />
+            Business</label>
       </fieldset>
       <!--Step 32
 Moving on to the final fieldset. What if you wanted to allow a user to upload a profile picture?
