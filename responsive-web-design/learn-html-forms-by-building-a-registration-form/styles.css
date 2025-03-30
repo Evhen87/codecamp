@@ -146,3 +146,10 @@ Using another attribute selector, style the input with a type of file to be the 
 input[type="file"] {
    padding: 1px 2px;
  }
+ /*Step 65
+Lastly change the text color of the terms and conditions link element to #dfdfe2 by adding a new selector in the CSS.
+
+Well done! You have completed the final part of the Registration Form practice project.*/
+a {
+   color: #dfdfe2;
+ }
