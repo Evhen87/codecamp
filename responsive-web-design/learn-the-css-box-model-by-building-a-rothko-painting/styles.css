@@ -130,6 +130,10 @@ Center the .three element on the canvas by setting its margin to auto.*/
 Increase the blur of .three by 2 pixels.*/
 /*Step 39
 Add a box-shadow to .three with the values 0 0 5px 5px #b20403.*/
+/*Step 42
+The border-radius property accepts up to four values to round the top-left, top-right, bottom-right, and bottom-left corners.
+
+Round the top-left corner of .three by 30 pixels, the top-right by 25 pixels, the bottom-right by 60 pixels, and bottom-left by 12 pixels.*/
 .three {
    width: 91%;
    height: 28%;
@@ -137,4 +141,5 @@ Add a box-shadow to .three with the values 0 0 5px 5px #b20403.*/
    margin: auto;
    filter: blur(2px);
    box-shadow: 0 0 5px 5px #b20403;
+   border-radius: 30px 25px 60px 12px;
 }
