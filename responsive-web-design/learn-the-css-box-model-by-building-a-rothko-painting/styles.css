@@ -83,7 +83,10 @@ You don't always have to use pixels when sizing an element.
 Create a new rule, .three, and set its width to 91%.*/
 /*Step 30
 Set the height of .three to 28%.*/
+/*Step 31
+Change the background-color of .three to #b20403.*/
 .three {
    width: 91%;
    height: 28%;
+   background-color: #b20403;
 }
