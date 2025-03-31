@@ -95,6 +95,11 @@ In the .two selector, use margin shorthand property to set top margin to 0, hori
    background-color: #8f0401;
    margin: 0 auto 20px;
  }
+ /*Step 35
+Create a rule that targets both .one and .two and increase their blur effect by 1 pixel.*/
+.one, .two {
+   filter: blur(1px);
+}
  /*Step 29
 You don't always have to use pixels when sizing an element.
 
@@ -105,10 +110,12 @@ Set the height of .three to 28%.*/
 Change the background-color of .three to #b20403.*/
 /*Step 32
 Center the .three element on the canvas by setting its margin to auto.*/
-
+/*Step 36
+Increase the blur of .three by 2 pixels.*/
 .three {
    width: 91%;
    height: 28%;
    background-color: #b20403;
    margin: auto;
+   filter: blur(2px);
 }
