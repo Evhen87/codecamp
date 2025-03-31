@@ -71,11 +71,17 @@ Set the height of the .two element to 200 pixels.*/
 Set the background-color of the .two element to #8f0401.*/
 /*Step 27
 Center the .two element by setting its margin to auto.*/
+/*Step 33
+It's helpful to have your margins push in one direction.
+
+In this case, the bottom margin of the .one element pushes .two down 20 pixels.
+
+In the .two selector, use margin shorthand property to set top margin to 0, horizontal margin to auto, and bottom margin to 20px. This will remove its top margin, horizontally center it, and set its bottom margin to 20 pixels.*/
 .two {
    width: 475px;
    height: 200px;
    background-color: #8f0401;
-   margin: auto;
+   margin: 0 auto 20px;
  }
  /*Step 29
 You don't always have to use pixels when sizing an element.
@@ -87,6 +93,7 @@ Set the height of .three to 28%.*/
 Change the background-color of .three to #b20403.*/
 /*Step 32
 Center the .three element on the canvas by setting its margin to auto.*/
+
 .three {
    width: 91%;
    height: 28%;
