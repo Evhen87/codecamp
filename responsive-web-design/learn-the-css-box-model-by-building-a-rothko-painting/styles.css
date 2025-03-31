@@ -85,8 +85,11 @@ Create a new rule, .three, and set its width to 91%.*/
 Set the height of .three to 28%.*/
 /*Step 31
 Change the background-color of .three to #b20403.*/
+/*Step 32
+Center the .three element on the canvas by setting its margin to auto.*/
 .three {
    width: 91%;
    height: 28%;
    background-color: #b20403;
+   margin: auto;
 }
