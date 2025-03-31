@@ -101,12 +101,15 @@ In this case, the bottom margin of the .one element pushes .two down 20 pixels.
 In the .two selector, use margin shorthand property to set top margin to 0, horizontal margin to auto, and bottom margin to 20px. This will remove its top margin, horizontally center it, and set its bottom margin to 20 pixels.*/
 /*Step 38
 Use the same box-shadow declaration for .two, but change the color from #efb762 to #8f0401.*/
+/*Step 41
+Use the border-radius property on the .two selector, to set its top-left radius and bottom-right radius to 8px, and top-right radius and bottom-left radius to 10px.*/
 .two {
    width: 475px;
    height: 200px;
    background-color: #8f0401;
    margin: 0 auto 20px;
    box-shadow: 0 0 3px 3px #8f0401;
+   border-radius: 8px 10px 8px 10px;
  }
  /*Step 35
 Create a rule that targets both .one and .two and increase their blur effect by 1 pixel.*/
