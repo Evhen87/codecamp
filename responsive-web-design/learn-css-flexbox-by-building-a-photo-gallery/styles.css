@@ -17,6 +17,13 @@ Change the box-sizing property to border-box. Notice how your blue image borders
 * {
    box-sizing: border-box;
  }
+ /*Step 12
+Remove the margin from your body element, set the font-family to sans-serif, and give it a background-color of #f5f6f7 as the value.*/
+body {
+   margin: 0;
+   font-family: sans-serif;
+   background-color: #f5f6f7;
+}
  /*Step 10
 Now that you have figured out your box-sizing approach, you can clean up the CSS you added to see the changes.
 
