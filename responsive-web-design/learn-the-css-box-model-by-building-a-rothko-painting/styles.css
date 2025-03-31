@@ -81,6 +81,9 @@ Center the .two element by setting its margin to auto.*/
 You don't always have to use pixels when sizing an element.
 
 Create a new rule, .three, and set its width to 91%.*/
+/*Step 30
+Set the height of .three to 28%.*/
 .three {
    width: 91%;
+   height: 28%;
 }
