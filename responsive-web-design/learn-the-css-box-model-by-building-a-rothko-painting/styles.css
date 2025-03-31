@@ -69,11 +69,16 @@ Set the background-color of .one to #efb762.*/
 Use margins to position the .one element on the canvas.
 
 Add the shorthand margin property with a vertical margin of 20px and a horizontal margin of auto.*/
+/*Step 37
+The rectangles are too small and their edges don't have the soft quality of a painting.
+
+Increase the area and soften the edges of .one by setting its box-shadow to 0 0 3px 3px #efb762.*/
 .one {
    width: 425px;
    height: 150px;
    background-color: #efb762;
    margin: 20px auto;
+   box-shadow: 0 0 3px 3px #efb762;
 }
 /*Step 24
 Create a new CSS rule using the .two selector and set its width to 475 pixels.*/
