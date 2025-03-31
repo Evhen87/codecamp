@@ -73,12 +73,17 @@ Add the shorthand margin property with a vertical margin of 20px and a horizonta
 The rectangles are too small and their edges don't have the soft quality of a painting.
 
 Increase the area and soften the edges of .one by setting its box-shadow to 0 0 3px 3px #efb762.*/
+/*Step 40
+The corners of each rectangle are still too sharp.
+
+Round each corner of the .one element by 9 pixels, using the border-radius property.*/
 .one {
    width: 425px;
    height: 150px;
    background-color: #efb762;
    margin: 20px auto;
    box-shadow: 0 0 3px 3px #efb762;
+   border-radius: 9px;
 }
 /*Step 24
 Create a new CSS rule using the .two selector and set its width to 475 pixels.*/
