@@ -103,9 +103,12 @@ Also set the height property to 300px to keep your images a uniform size.*/
 Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
 
 Give your .gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.*/
+/*Step 22
+Smooth out your images a bit by giving the .gallery img selector a border-radius property with 10px set as the value.*/
 .gallery img{
    width: 100%;
    max-width: 350px;
    height: 300px;
    object-fit: cover;
+   border-radius: 10px;
 }
