@@ -108,6 +108,8 @@ In the .two selector, use margin shorthand property to set top margin to 0, hori
 Use the same box-shadow declaration for .two, but change the color from #efb762 to #8f0401.*/
 /*Step 41
 Use the border-radius property on the .two selector, to set its top-left radius and bottom-right radius to 8px, and top-right radius and bottom-left radius to 10px.*/
+/*Step 44
+Rotate the .two element clockwise by 0.4 degrees.*/
 .two {
    width: 475px;
    height: 200px;
@@ -115,6 +117,7 @@ Use the border-radius property on the .two selector, to set its top-left radius 
    margin: 0 auto 20px;
    box-shadow: 0 0 3px 3px #8f0401;
    border-radius: 8px 10px 8px 10px;
+   transform: rotate(0.4deg);
  }
  /*Step 35
 Create a rule that targets both .one and .two and increase their blur effect by 1 pixel.*/
