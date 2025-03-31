@@ -17,12 +17,7 @@ Change the box-sizing property to border-box. Notice how your blue image borders
 * {
    box-sizing: border-box;
  }
-.gallery {
-   width: 50%;
-   border: 5px solid red;
-}
-img {
-   width: 100%;
-   padding: 5px;
-   border: 5px solid blue;
- }
+ /*Step 10
+Now that you have figured out your box-sizing approach, you can clean up the CSS you added to see the changes.
+
+Remove your .gallery and img selectors, and all rules within.*/
