@@ -45,8 +45,15 @@ Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px 
 The letter-spacing property can be used to adjust the space between each character of text in an element.
 
 Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.*/
-h1 {
+/*Step 20
+Your new class does not have any styling yet. Create a .bold selector and give it a font-weight property set to 800 to make the text bold.
+
+Go ahead and remove the font-weight property from your h1 selector as well.*/
+.bold {
    font-weight: 800;
+}
+h1 {
+   
    text-align: center;
    margin: -4px 0;
    letter-spacing: 0.15px;
