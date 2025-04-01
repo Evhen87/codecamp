@@ -39,7 +39,10 @@ Remember that the use of h1, h2, and similar tags determine the semantic structu
 Create an h1 rule and set the font-weight property to 800. This will make your h1 text bolder.*/
 /*Step 13
 Give your h1 selector a text-align property of center.*/
+/*Step 14
+Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.*/
 h1 {
    font-weight: 800;
    text-align: center;
+   margin: -4px 0;
 }
