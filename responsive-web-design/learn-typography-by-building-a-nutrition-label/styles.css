@@ -46,3 +46,8 @@ h1 {
    text-align: center;
    margin: -4px 0;
 }
+/*Step 15Passed
+Create a p selector and remove all margins.*/
+p {
+   margin: 0;
+}
