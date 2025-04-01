@@ -4,6 +4,13 @@ Create a body selector and give it a font-family set to Open Sans with a fallbac
 Remember that fonts with spaces in the name must be wrapped in quotes for CSS.*/
 /*Step 6
 The font is a bit small. Create an html selector and set the font to have a size of 16px.*/
+/*Step 11
+If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.*/
+* {
+   box-sizing: border-box;
+}
 html {
    font-size: 16px;
  }
