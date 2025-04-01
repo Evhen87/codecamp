@@ -10,3 +10,10 @@ html {
 body {
    font-family: "Open Sans", sans-serif;
 }
+/*Step 8
+Borders can be used to group and prioritize content.
+
+Create a .label selector and give it a border set to 2px solid black.*/
+.label {
+   border: 2px solid black;
+}
