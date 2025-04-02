@@ -129,5 +129,9 @@ Give your .calories-info span selector a margin set to -7px -2px. This will shif
    font-size: 2.4em;
    font-weight: 700;
    margin: -7px -2px;
-
+}
+/*Step 41
+The text % Daily Value * should be aligned to the right. Create a .right selector and use the justify-content property to do it.*/
+.right {
+   justify-content: flex-end;
 }
