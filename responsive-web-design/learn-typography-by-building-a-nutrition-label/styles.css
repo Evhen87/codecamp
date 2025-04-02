@@ -52,7 +52,9 @@ Go ahead and remove the font-weight property from your h1 selector as well.*/
 .bold {
    font-weight: 800;
 }
-h1 {
+/*Step 25
+Now update your h1 selector to be header h1 to specifically target your h1 element within your new header.*/
+header h1 {
    
    text-align: center;
    margin: -4px 0;
