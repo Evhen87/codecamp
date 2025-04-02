@@ -95,3 +95,8 @@ Create a .small-text selector and set the font-size to 0.85rem, which would calc
 .small-text {
    font-size: 0.85rem;
 }
+/*Step 32
+Create a .calories-info h2 selector and remove all margins.*/
+.calories-info h2 {
+   margin: 0;
+}
