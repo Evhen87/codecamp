@@ -88,3 +88,10 @@ Create a selector for your new .divider and set the border-bottom property to 1p
    border-bottom: 1px solid #888989;
    margin: 2px 0;
 }
+/*Step 31
+The rem unit stands for root em, and is relative to the font size of the html element.
+
+Create a .small-text selector and set the font-size to 0.85rem, which would calculate to roughly 13.6px (remember that you set your html to have a font-size of 16px).*/
+.small-text {
+   font-size: 0.85rem;
+}
