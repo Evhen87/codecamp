@@ -107,6 +107,10 @@ Create another p element after your last .divider, and give it the text Total Su
 Below your .double-indent element, add a new p element with the text Includes 10g Added Sugars 20%. Your new p element should also be double indented, and have no bottom border. Use a span to make the 20% bold and right aligned.
 
 Then create another divider after that p element.      -->
+      <!--Step 62
+After your last divider, create another p element with the text Protein 3g. Use the necessary classes to remove the bottom border, and a span to make the Protein bold. Then wrap the text Protein 3g including the new span element, in a new span element.
+
+Following this element, create a large divider.      -->
       <div class="daily-value small-text">
          <p class="bold right no-divider">% Daily Value *</p>
          <div class="divider"></div>
@@ -128,6 +132,8 @@ The advantage to creating these dividers is that you can apply specific classes 
          <div class="divider double-indent"></div>
          <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
          <div class="divider"></div>
+         <p class="no-divider"><span><span class="bold">Protein</span> 3g</span></p>
+         <div class="divider large"></div>
       </div>
    </div>
 
