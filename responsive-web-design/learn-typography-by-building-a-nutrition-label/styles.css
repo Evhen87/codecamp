@@ -52,6 +52,14 @@ Go ahead and remove the font-weight property from your h1 selector as well.*/
 .bold {
    font-weight: 800;
 }
+/*Step 27
+Create a new .large selector and give it a height property set to 10px. Also create an .large, .medium selector and set the background-color property to black.*/
+.large {
+   height: 10px;
+}
+.large, .medium {
+   background-color: black;
+}
 /*Step 25
 Now update your h1 selector to be header h1 to specifically target your h1 element within your new header.*/
 header h1 {
