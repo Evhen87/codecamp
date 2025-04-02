@@ -140,6 +140,11 @@ Create a new .indent selector and give it a margin-left property set to 1em.*/
 .indent {
    margin-left: 1em;
 }
+/*Step 60
+Create a .double-indent selector and give it a left margin of 2em.*/
+.double-indent {
+   margin-left: 2em;
+}
 /*Step 48
 Create a .daily-value p selector to target all of your p elements in the daily-value section. Give this new selector a border-bottom set to 1px solid #888989.*/
 /*Step 50
