@@ -135,3 +135,8 @@ The text % Daily Value * should be aligned to the right. Create a .right selecto
 .right {
    justify-content: flex-end;
 }
+/*Step 47
+Create a new .indent selector and give it a margin-left property set to 1em.*/
+.indent {
+   margin-left: 1em;
+}
