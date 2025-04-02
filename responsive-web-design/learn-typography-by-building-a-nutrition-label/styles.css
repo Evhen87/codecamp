@@ -65,6 +65,11 @@ Note: the medium(medium) class will be utilized later for the thinner bars of th
    background-color: black;
    border: 0;
 }
+/*Step 39
+Create an .medium selector and give it a height property of 5px.*/
+.medium {
+   height: 5px;
+}
 /*Step 25
 Now update your h1 selector to be header h1 to specifically target your h1 element within your new header.*/
 header h1 {
@@ -124,5 +129,5 @@ Give your .calories-info span selector a margin set to -7px -2px. This will shif
    font-size: 2.4em;
    font-weight: 700;
    margin: -7px -2px;
-   
+
 }
