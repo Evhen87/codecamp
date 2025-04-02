@@ -81,6 +81,10 @@ Below your element with the Total Fat text, create a new p element with the text
 This new p element will need to be indented. Give it a class set to indent.      -->
       <!--Step 49
 The bottom borders under your % Daily Value * and Saturated Fat 1g 5% elements do not extend the full width of the label. Add no-divider to the class for these two elements.      -->
+      <!--Step 51
+Now you will have to add separate dividers below your .no-divider elements.
+
+Your first .no-divider element has a .divider after it. Create another .divider after your second .no-divider element.      -->
       <div class="daily-value small-text">
          <p class="bold right no-divider">% Daily Value *</p>
          <div class="divider"></div>
@@ -88,6 +92,7 @@ The bottom borders under your % Daily Value * and Saturated Fat 1g 5% elements d
 Notice how the text 8g appears centered in the preview. Nest the span element containing the text Total Fat along with the text 8g, in an additional span element for alignment.-->
          <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
          <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+         <div class="divider"></div>
       </div>
    </div>
 
