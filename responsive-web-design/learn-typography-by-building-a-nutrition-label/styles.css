@@ -142,6 +142,16 @@ Create a new .indent selector and give it a margin-left property set to 1em.*/
 }
 /*Step 48
 Create a .daily-value p selector to target all of your p elements in the daily-value section. Give this new selector a border-bottom set to 1px solid #888989.*/
-.daily-value p {
+/*Step 50
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+Example Code
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+
+Modify your .daily-value p selector to exclude the .no-divider elements.*/
+.daily-value p:not(.no-divider) {
    border-bottom: 1px solid #888989;
 }
