@@ -60,8 +60,12 @@ h1 {
 }
 /*Step 15Passed
 Create a p selector and remove all margins.*/
+/*Step 23
+Now we can add the horizontal spacing using flex. In your p selector, add a display property set to flex and a justify-content property set to space-between.*/
 p {
    margin: 0;
+   display: flex;
+   justify-content: space-between;
 }
 /*Step 17
 Create a selector for your new .divider and set the border-bottom property to 1px solid #888989. Also give it a top and bottom margin of 2px. It should not have any left or right margin.*/
