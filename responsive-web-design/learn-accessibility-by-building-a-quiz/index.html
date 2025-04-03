@@ -121,11 +121,15 @@ Then, within each div.question-block element, add one h3 element with text of in
          <section role="region" aria-labelledby="html-questions">
             <h2 id="html-questions">HTML</h2>
             <div class="question-block">
-               <h3>1</h3>
+               <!--Step 24
+The question numbers are not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the element, is to add text only a screen reader can read.
+
+Nest a span element with a class of sr-only after the number in each of the h3 elements.-->
+               <h3>1 <span class="sr-only"></span></h3>
                <fieldset class="question"></fieldset>
             </div>
             <div class="question-block">
-               <h3>2</h3>
+               <h3>2 <span class="sr-only"></span></h3>
                <fieldset class="question"></fieldset>
             </div>
          </section>
