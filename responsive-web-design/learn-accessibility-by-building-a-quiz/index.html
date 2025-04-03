@@ -85,8 +85,21 @@ html-questions
 css-questions
 Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content.-->
       <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+         <!--Step 19
+Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+
+Then, within each div nest one label element, and one input element.-->
          <section role="region" aria-labelledby="student-info">
             <h2 id="student-info">student-info</h2>
+            <div class="info">
+               <label for=""></label><input type="text">
+            </div>
+            <div class="info">
+               <label for=""></label><input type="text">
+            </div>
+            <div class="info">
+               <label for=""></label><input type="text">
+            </div>
          </section>
          <section role="region" aria-labelledby="html-questions">
             <h2 id="html-questions">html-questions</h2>
