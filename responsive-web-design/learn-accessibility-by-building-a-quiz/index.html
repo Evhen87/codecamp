@@ -97,9 +97,13 @@ This is done by giving the label a for attribute, which contains the id of the i
 This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.-->
          <section role="region" aria-labelledby="student-info">
             <h2 id="student-info">Student Info</h2>
+            <!--Step 22
+Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
+
+Remove the placeholder text from the first input element, relying on the label being the best-practice.-->
             <div class="info">
                <label for="student-name">Name:</label>
-               <input id="student-name" type="text" name="student-name" placeholder="student-name" />
+               <input id="student-name" type="text" name="student-name" />
             </div>
             <div class="info">
                <label for="student-email">Email:</label>
