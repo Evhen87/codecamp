@@ -69,12 +69,14 @@ As this is a quiz, you will need a form for users to submit answers. You can sem
 
 Within the main element, create a form with three nested section elements. Then, make the form submit to https://freecodecamp.org/practice-project/accessibility-quiz, using the correct method.-->
    <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-         <section></section>
-         <section></section>
-         <section></section>
+      <!--Step 15
+To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
 
-         <button type="submit"></button>
+Give each of the section elements the region role.-->
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+         <section role="region"></section>
+         <section role="region"></section>
+         <section role="region"></section>
       </form>
    </main>
 </body>
