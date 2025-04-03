@@ -96,15 +96,18 @@ This is done by giving the label a for attribute, which contains the id of the i
 
 This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.-->
          <section role="region" aria-labelledby="student-info">
-            <h2 id="student-info">student-info</h2>
+            <h2 id="student-info">Student Info</h2>
             <div class="info">
-               <label for="name">Name</label><input id="name" type="text">
+               <label for="student-name">Name:</label>
+               <input id="student-name" type="text" name="student-name" placeholder="student-name" />
             </div>
             <div class="info">
-               <label for="email">Email address</label><input id="email" type="text">
+               <label for="student-email">Email:</label>
+               <input id="student-email" type="email" name="student-email" />
             </div>
             <div class="info">
-               <label for="birth">Date of birth</label><input id="birth" type="text">
+               <label for="birth-date">Date of Birth:</label>
+               <input id="birth-date" type="date" name="birth-date" />
             </div>
          </section>
          <section role="region" aria-labelledby="html-questions">
