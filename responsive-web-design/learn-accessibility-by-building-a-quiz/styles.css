@@ -65,3 +65,26 @@ h1, h2 {
 h2 {
    border-bottom: 4px solid #dfdfe2;
 }
+/*Step 26
+The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
+
+This pattern is to set the following CSS properties:
+
+Example Code
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+clip-path: inset(50%);
+white-space: nowrap;
+Use the above to define the .sr-only CSS rule.*/
+.sr-only {
+   position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+clip-path: inset(50%);
+white-space: nowrap;
+}
