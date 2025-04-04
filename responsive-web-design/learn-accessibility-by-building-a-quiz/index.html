@@ -185,12 +185,19 @@ In the second span element, add the text Question.               -->
 The final section of this quiz will contain a dropdown, and a text box.
 
 Begin by nesting a div with a class of formrow, and nest four div elements inside of it, alternating their class attributes with question-block and answer.-->
+         <!--Step 36
+Within the div.question-block elements, nest one label element, and add a CSS related question to the label text.-->
          <section role="region" aria-labelledby="css-questions">
             <h2 id="css-questions">CSS</h2>
             <div class="formrow">
-               <div class="question-block"></div>
+               <div class="question-block">
+                  <label for="">The rem unit is calculated based on the value of the html element's font-size property.
+                     True or False?</label>
+               </div>
                <div class="answer"></div>
-               <div class="question-block"></div>
+               <div class="question-block">
+                  <label for="">Inline elements are placed on one line. True or false?</label>
+               </div>
                <div class="answer"></div>
             </div>
          </section>
