@@ -157,9 +157,15 @@ input {
 }
 /*Step 55
 To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text.*/
-.info > input {
+/*Step 56
+Target all label elements within .info elements, and set their width to 10%, and make it so they do not take up less than 55px.*/
+.info input {
    width: 50%;
    text-align: left;
+}
+.info label {
+   width: 10%;
+   min-width: 55px;
 }
 /*Step 34
 To prevent unnecessary repetition, target the before pseudo-element of the h3 element, and give it a content property of "Question #".*/
