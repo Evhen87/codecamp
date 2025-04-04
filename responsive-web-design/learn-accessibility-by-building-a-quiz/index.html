@@ -137,22 +137,28 @@ Nest a span element with a class of sr-only after the number in each of the h3 e
 Within the first span element, add the text Question.
 
 In the second span element, add the text Question.               -->
-               <h3>1 <span class="sr-only">Question</span></h3>
+               <h3>1 <span class="sr-only">Question</span>1</h3>
                <fieldset class="question" name="html-question-one">
-                  <legend>true/false</legend>
+                  <legend>The legend element represents a caption for the content of its
+                     parent fieldset element</legend>
+                  <!--Step 29Passed
+                     To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+                     
+                     Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.-->
                   <ul class="answers-list">
-                     <li></li>
-                     <li></li>
+                     <li><label for=""><input type="radio" name="" id=""></label></li>
+                     <li><label for=""><input type="radio" name="" id=""></label></li>
                   </ul>
                </fieldset>
             </div>
             <div class="question-block">
-               <h3>2 <span class="sr-only">Question</span></h3>
+               <h3>2 <span class="sr-only">Question</span>2</h3>
                <fieldset class="question" name="html-question-two">
-                  <legend>yes/no</legend>
+                  <legend>A label element nesting an input element is required to have a
+                     for attribute with the same value as the input's id</legend>
                   <ul class="answers-list">
-                     <li></li>
-                     <li></li>
+                     <li><label for=""><input type="radio" name="" id=""></label></li>
+                     <li><label for=""><input type="radio" name="" id=""></label></li>
                   </ul>
                </fieldset>
             </div>
