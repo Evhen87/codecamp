@@ -263,6 +263,13 @@ Now, we cannot read the text. Target the footer and the anchor element within to
 footer, footer a {
    color: #d0d0d5;
 }
+/*Step 65
+Horizontally center all the text within the address element, and add some padding.*/
+address {
+   display: flex;
+   padding: 10px;
+   text-align: center;
+}
 /*Step 26
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
