@@ -177,6 +177,22 @@ label {
    width: 10%;
    min-width: 55px;
 }
+/*Step 58
+To neaten the .question-block elements, set the following CSS properties:
+
+Example Code
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;*/
+.question-block {
+   text-align: left;
+ display: block;
+ width: 100%;
+ margin-top: 20px;
+ padding-top: 5px;
+ }
 /*Step 34
 To prevent unnecessary repetition, target the before pseudo-element of the h3 element, and give it a content property of "Question #".*/
 h3::before {
