@@ -155,9 +155,15 @@ In the second span element, add the text Question.               -->
                      Give the label elements text such that the input comes before the text. Then, give the input elements a value matching the text.
                      
                      The text should either be True or False.-->
+                  <!--Step 33
+                     If you click on the radio inputs, you might notice both inputs within the same true/false fieldset can be selected at the same time.
+                     
+                     Group the relevant inputs together such that only one input from a pair can be selected at a time.-->
                   <ul class="answers-list">
-                     <li><label for="q1-a1"><input id="q1-a1" type="radio" name="" value="true"> True</label></li>
-                     <li><label for="q1-a2"><input id="q1-a2" type="radio" name="" value="true"> False</label></li>
+                     <li><label for="q1-a1"><input id="q1-a1" name="q1" type="radio" name="" value="true"> True</label>
+                     </li>
+                     <li><label for="q1-a2"><input id="q1-a2" name="q1" type="radio" name="" value="true"> False</label>
+                     </li>
                   </ul>
                </fieldset>
             </div>
@@ -167,8 +173,10 @@ In the second span element, add the text Question.               -->
                   <legend>A label element nesting an input element is required to have a
                      for attribute with the same value as the input's id</legend>
                   <ul class="answers-list">
-                     <li><label for="q2-a1"><input id="q2-a1" type="radio" name="" value="true"> True</label></li>
-                     <li><label for="q2-a2"><input id="q2-a2" type="radio" name="" value="false"> False</label></li>
+                     <li><label for="q2-a1"><input id="q2-a1" name="q2" type="radio" name="" value="true"> True</label>
+                     </li>
+                     <li><label for="q2-a2"><input id="q2-a2" name="q2" type="radio" name="" value="false">
+                           False</label></li>
                   </ul>
                </fieldset>
             </div>
