@@ -159,6 +159,16 @@ input {
 To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text.*/
 /*Step 56
 Target all label elements within .info elements, and set their width to 10%, and make it so they do not take up less than 55px.*/
+/*Step 57
+To align the input boxes with each other, create a new ruleset that targets all input and label elements within an .info element and set the display property to inline-block.
+
+Also, align the label element's text to the right.*/
+.info input, .info label {
+   display: inline-block;
+}
+label {
+   text-align: right;
+}
 .info input {
    width: 50%;
    text-align: left;
