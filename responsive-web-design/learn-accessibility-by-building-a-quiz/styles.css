@@ -51,6 +51,15 @@ h1 {
 main {
    padding-top: 25px;
 }
+/*Step 51
+Set the width of the section elements to 80% of their parent container. Then, use margins to center the section elements, adding 10px to the bottom margin.
+
+Also, ensure the section elements cannot be larger than 600px in width.*/
+section {
+   width: 80%;
+   max-width: 600px;
+   margin: 0 auto 10px;
+}
 nav {
    width: 50%;
    max-width: 300px;
@@ -123,8 +132,12 @@ Also, add a border-bottom of 4px solid #dfdfe2 to h2 elements to make the sectio
 h1, h2 {
    font-family: Verdana, sans-serif;
 }
+/*Step 52
+Replace the top margin of the h2 elements with 60px of top padding.*/
 h2 {
    border-bottom: 4px solid #dfdfe2;
+   margin-top: 0;
+   padding-top: 60px;
 }
 /*Step 34
 To prevent unnecessary repetition, target the before pseudo-element of the h3 element, and give it a content property of "Question #".*/
