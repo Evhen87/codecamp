@@ -39,9 +39,17 @@ header {
 }
 /*Step 11
 Change the h1 font color to #f1be32, and set the font size to min(5vw, 1.2em).*/
+/*Step 49
+When the screen width is small, the h1 does not wrap its text content how it should. Align the text for the h1 element in the center.
+
+Then, give the main padding such that the Student Info section header can be fully seen.*/
 h1 {
    color: #f1be32;
    font-size: min(5vw, 1.2em);
+   text-align: center;
+}
+main {
+   padding-top: 25px;
 }
 nav {
    width: 50%;
