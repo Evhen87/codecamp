@@ -62,9 +62,24 @@ The child combinator selector > is used between selectors to target only element
 This can be helpful when you have deeply nested elements and want to control the scope of your styling.
 
 Use the > selector to target the unordered list elements within the nav elements, and use Flexbox to evenly space the children.*/
+/*Step 50
+On small screens, the unordered list in the navigation bar overflows the right side of the screen.
+
+Fix this by using Flexbox to wrap the ul content. Then, set the following CSS properties to correctly align the text:
+
+Example Code
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;*/
 nav > ul {
    display: flex;
    justify-content: space-evenly;
+   align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+flex-wrap: wrap;
 }
 /*Step 45
 Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:
