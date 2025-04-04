@@ -258,6 +258,11 @@ footer {
    align-items: center;
    justify-content: center;
 }
+/*Step 64
+Now, we cannot read the text. Target the footer and the anchor element within to set the font color to a color of adequate contrast ratio.*/
+footer, footer a {
+   color: #d0d0d5;
+}
 /*Step 26
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
