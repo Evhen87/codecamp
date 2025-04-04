@@ -230,7 +230,26 @@ Remove the default styling for the .answers-list items by setting its style to n
    list-style: none;
    padding: 0;
 }
+/*Step 62
+Give the submit button a freeCodeCamp-style design, with the following CSS properties:
 
+Example Code
+display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 1.438rem;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;*/
+button {
+   display: block;
+   margin: 40px auto;
+   width: 40%;
+   padding: 15px;
+   font-size: 1.438rem;
+   background: #d0d0d5;
+   border: 3px solid #3b3b4f;
+}
 /*Step 26
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
