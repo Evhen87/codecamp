@@ -65,6 +65,11 @@ h1, h2 {
 h2 {
    border-bottom: 4px solid #dfdfe2;
 }
+/*Step 34
+To prevent unnecessary repetition, target the before pseudo-element of the h3 element, and give it a content property of "Question #".*/
+h3::before {
+   content: "Question #";
+}
 /*Step 26
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
