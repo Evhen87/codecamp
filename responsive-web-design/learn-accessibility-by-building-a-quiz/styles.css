@@ -210,6 +210,14 @@ To prevent unnecessary repetition, target the before pseudo-element of the h3 el
 h3::before {
    content: "Question #";
 }
+/*Step 60
+It is useful to see the default border around the fieldset elements, during development. However, it might not be the style you want.
+
+Remove the border and bottom padding on the .question elements.*/
+.question {
+   border: none;
+   padding-bottom: 0;
+ }
 /*Step 26
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
