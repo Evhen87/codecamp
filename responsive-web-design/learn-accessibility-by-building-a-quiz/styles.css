@@ -53,6 +53,20 @@ nav > ul {
    display: flex;
    justify-content: space-evenly;
 }
+/*Step 45
+Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:
+
+Example Code
+color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;*/
+nav li   {
+   color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+}
 /*Step 17
 Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens.
 
