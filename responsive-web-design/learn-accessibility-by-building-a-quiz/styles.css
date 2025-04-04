@@ -144,6 +144,17 @@ Add padding to the top and left of the .info elements, and set the other values 
 .info {
    padding: 20px 0 0 20px;
 }
+/*Step 54
+Give the .formrow elements top margin, and left and right padding. The other padding values should be 0.
+
+Then, increase the font size for all input elements.*/
+.formrow {
+   margin-top: 20px;
+   padding: 0 20px;
+}
+input {
+   font-size: 20px;
+}
 /*Step 34
 To prevent unnecessary repetition, target the before pseudo-element of the h3 element, and give it a content property of "Question #".*/
 h3::before {
