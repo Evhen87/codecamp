@@ -40,11 +40,14 @@ To smooth the sharp edges of the piano and keys, start by giving the #piano a bo
 Time to style the keys. Below the #piano rule, target the .keys element with a class selector. Give the new rule a background-color property of #040404, a width property of 949px and a height property of 180px.*/
 /*Step 14
 Give the .keys a padding-left of 2px.*/
+/*Step 31
+You might have noticed the keys collapse when the browser window is smaller than 768px. Set overflow to hidden in the first .keys selector, to take care of this issue. This property will hide any element that is pushed outside the set width value of .keys.*/
 .keys {
    background-color: #040404;
    width: 949px;
    height: 180px;
    padding-left: 2px;
+   overflow: hidden;
 }
 /*Step 16
 Time to style the keys themselves. Create a class selector for the .key elements. Set the background-color set to the value #ffffff, the position property to relative, the width property to 41px, and the height property to 175px.*/
