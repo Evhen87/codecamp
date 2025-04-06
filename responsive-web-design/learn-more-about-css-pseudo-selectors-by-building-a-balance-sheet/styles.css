@@ -154,3 +154,8 @@ tbody td {
    min-width: 4rem;
    max-width: 4rem;
 }
+/*Step 54
+Now target the th elements within your table body, and give them a width of the entire container, less 12rem.*/
+tbody th {
+   width: calc(100% - 12rem);   
+ }
