@@ -85,12 +85,19 @@ Using a class selector, give the .cat-left-ear element a left and right border o
 Move the left ear into position by setting a position of absolute, a top of -26px, and a left of -31px.*/
 /*Step 26
 Those edges are too sharp for an ear. So, set the border-top-left-radius to 90px and the border-top-right-radius to 10px.*/
+/*Step 27
+To position the left ear properly, you can use CSS transform to rotate it in a certain degree.
+
+The transform property allows you to modify the shape, position, and size of an element without changing the layout or affecting the surrounding elements. It has functions such as translate(), rotate(), scale(), skew(), and matrix().
+
+Set the transform property to rotate(-45deg) and see what happens.*/
 .cat-left-ear {
    position: absolute;
    top: -26px;
    left: -31px;
    border-top-left-radius: 90px;
    border-top-right-radius: 10px;
+   transform: rotate(-45deg);
    border-left: 35px solid transparent;
    border-right: 35px solid transparent;  
    border-bottom: 70px solid #5e5e5e;
