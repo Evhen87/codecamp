@@ -175,3 +175,10 @@ As you did for the left inner ear, remove the sharp edges of the right inner ear
   border-right: 20px solid transparent;
   border-bottom: 40px solid #3b3b4f;
 }
+/*Step 43
+Using a class selector, give your .cat-left-eye element a width of 30px and a height of 40px. Also, give it a background-color of #000.*/
+.cat-left-eye {
+   width: 30px;
+   height: 40px;
+   background-color: #000;
+}
