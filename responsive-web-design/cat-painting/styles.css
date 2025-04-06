@@ -75,11 +75,14 @@ Notice that you now have a white square with thick borders. The borders have dia
 Within the same class selector adjust height and width to 0. Set the left, right and top border to transparent.
 
 Remove the background-color property, and you should see a triangle.*/
-.cat-right-ear {
-   height: 0;
-   width: 0;   
+/*Step 24
+Now you can begin working on your cat's ears.
+
+Clean up your review code by removing the .cat-right-ear selector and all of its properties.
+
+Using a class selector, give the .cat-left-ear element a left and right border of 35px solid transparent each. Also, set the bottom border to 70px solid #5e5e5e.*/
+.cat-left-ear {
    border-left: 35px solid transparent;
-   border-right: 35px solid transparent;
-   border-top: 35px solid transparent;
-   border-bottom: 35px solid red;
-}
+   border-right: 35px solid transparent;  
+   border-bottom: 70px solid #5e5e5e;
+ }
