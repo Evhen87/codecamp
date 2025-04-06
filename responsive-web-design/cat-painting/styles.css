@@ -143,10 +143,23 @@ Most cats have different colors in their ear and the inner part of the same ear.
 Using a class selector, give your .cat-left-inner-ear element a left and right border of 20px solid transparent each. Also give it a bottom border of 40px solid #3b3b4f.*/
 /*Step 36
 Move the inner ear into position with a position property set to absolute, a top of 22px, and a left of -20px.*/
+/*Step 37
+To remove all the pointed edges of the ear, set a bottom-right and bottom-left border radius of 40% each, a top-left border radius of 90px, and a top-right border radius of 10px.*/
 .cat-left-inner-ear {
    position: absolute;
    top: 22px;
    left: -20px;
+   border-bottom-right-radius: 40%;
+   border-bottom-left-radius: 40%;
+   border-top-left-radius: 90px;
+   border-top-right-radius: 10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
+}
+/*Step 38
+It's time to work on the right inner ear. Using a class selector, give your .cat-right-inner-ear element a left and right border of 20px solid transparent. Also, give it a bottom border of 40px solid #3b3b4f.*/
+.cat-right-inner-ear {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 40px solid #3b3b4f;
