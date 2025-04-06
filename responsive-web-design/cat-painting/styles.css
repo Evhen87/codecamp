@@ -110,11 +110,15 @@ Using a class selector, give the .cat-right-ear element a left and right border 
 Move the right ear into position with a position property set to absolute, a top of -26px, and a left of 163px.*/
 /*Step 30
 As you did for the left ear, rotate the right ear at 45 degrees.*/
+/*Step 31
+Remove the sharp border of the right ear by setting the border-top-left-radius to 90px and the border-top-right-radius to 10px.*/
 .cat-right-ear {
    position: absolute;
    top: -26px;
    left: 163px;
    transform: rotate(45deg);
+   border-top-left-radius: 90px;
+   border-top-right-radius: 10px;
    border-left: 35px solid transparent;
    border-right: 35px solid transparent;
    border-bottom: 70px solid #5e5e5e;
