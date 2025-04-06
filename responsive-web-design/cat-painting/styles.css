@@ -159,7 +159,12 @@ To remove all the pointed edges of the ear, set a bottom-right and bottom-left b
 }
 /*Step 38
 It's time to work on the right inner ear. Using a class selector, give your .cat-right-inner-ear element a left and right border of 20px solid transparent. Also, give it a bottom border of 40px solid #3b3b4f.*/
+/*Step 39
+Move the right inner ear into position with a position property set to absolute, a top of 22px and a left of -20px.*/
 .cat-right-inner-ear {
+   position: absolute;
+   top: 22px;
+   left: -20px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 40px solid #3b3b4f;
