@@ -72,3 +72,10 @@ For the .key.black--key::after, set the width to 32px and the height to 100px.*/
    width: 32px;
    height: 100px;
 }
+/*Step 22
+Start styling the logo by creating a .logo selector. Set the width to 200px, a position of absolute and a top set to 23px.*/
+.logo {
+   width: 200px;
+   position: absolute;
+   top: 23px;
+}
