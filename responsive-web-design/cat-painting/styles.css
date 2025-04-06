@@ -83,10 +83,14 @@ Clean up your review code by removing the .cat-right-ear selector and all of its
 Using a class selector, give the .cat-left-ear element a left and right border of 35px solid transparent each. Also, set the bottom border to 70px solid #5e5e5e.*/
 /*Step 25
 Move the left ear into position by setting a position of absolute, a top of -26px, and a left of -31px.*/
+/*Step 26
+Those edges are too sharp for an ear. So, set the border-top-left-radius to 90px and the border-top-right-radius to 10px.*/
 .cat-left-ear {
    position: absolute;
    top: -26px;
    left: -31px;
+   border-top-left-radius: 90px;
+   border-top-right-radius: 10px;
    border-left: 35px solid transparent;
    border-right: 35px solid transparent;  
    border-bottom: 70px solid #5e5e5e;
