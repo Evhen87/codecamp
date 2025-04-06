@@ -270,8 +270,11 @@ You are going to make the two mouth lines into an elliptical shape. So, give the
 }
 /*Step 61
 Using a class selector, give your .cat-mouth-line-left element a position of absolute, a top of 88px and a left of 74px. This would move it into the right position.*/
+/*Step 62
+Using the transform property, rotate the left mouth line at 170 degrees.*/
 .cat-mouth-line-left {
    position: absolute;
    top: 88px;
    left: 74px;
+   transform: rotate(170deg);
 }
