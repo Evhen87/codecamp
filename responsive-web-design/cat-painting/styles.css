@@ -123,10 +123,13 @@ Move the right ear into position with a position property set to absolute, a top
 As you did for the left ear, rotate the right ear at 45 degrees.*/
 /*Step 31
 Remove the sharp border of the right ear by setting the border-top-left-radius to 90px and the border-top-right-radius to 10px.*/
+/*Step 34
+Set the z-index property of the right ear to 1 so it always stays over the head.*/
 .cat-right-ear {
    position: absolute;
    top: -26px;
    left: 163px;
+   z-index: 1;
    transform: rotate(45deg);
    border-top-left-radius: 90px;
    border-top-right-radius: 10px;
