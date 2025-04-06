@@ -179,10 +179,14 @@ As you did for the left inner ear, remove the sharp edges of the right inner ear
 Using a class selector, give your .cat-left-eye element a width of 30px and a height of 40px. Also, give it a background-color of #000.*/
 /*Step 44
 Move the left eye into position with a position property of absolute, a top of 54px, and a left of 39px.*/
+/*Step 45
+To make the left eye look like an eye, give it a border radius of 60%. Also, using the transform property, rotate it at 25 degrees.*/
 .cat-left-eye {
    position: absolute;
    top: 54px;
    left: 39px;
+   border-radius: 60%;
+   transform: rotate(25deg);
    width: 30px;
    height: 40px;
    background-color: #000;
