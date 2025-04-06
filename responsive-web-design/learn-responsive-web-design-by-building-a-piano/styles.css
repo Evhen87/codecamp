@@ -73,6 +73,8 @@ If you would like to experiment, try removing the background-color property and 
 Give the .key.black--key::after a position property set to absolute and a left property set to -18px.*/
 /*Step 20
 For the .key.black--key::after, set the width to 32px and the height to 100px.*/
+/*Step 26
+Give the .key.black--key::after selector a border-radius of 0 0 3px 3px to match the keys.*/
 .key.black--key::after{
    position: absolute;
    left: -18px;
@@ -80,6 +82,7 @@ For the .key.black--key::after, set the width to 32px and the height to 100px.*/
    content: "";
    width: 32px;
    height: 100px;
+   border-radius: 0 0 3px 3px;
 }
 /*Step 22
 Start styling the logo by creating a .logo selector. Set the width to 200px, a position of absolute and a top set to 23px.*/
