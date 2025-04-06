@@ -12,12 +12,16 @@ The CSS clip property is used to define the visible portions of an element. Set 
 The clip-path property determines the shape the clip property should take. Set the clip-path property to the value of inset(50%), forming the clip-path into a rectangle within the element.*/
 /*Step 32
 Now you need to size these elements down. Give your span[class~="sr-only"] selector a width and height property set to 1px.*/
+/*Step 33
+To prevent the text content from overflowing, give your span[class~="sr-only"] selector an overflow property set to hidden and a white-space property set to nowrap.*/
 span[class~="sr-only"] {
    border: 0;
    clip: rect(1px, 1px, 1px, 1px);
    clip-path: inset(50%);
    width: 1px;
    height: 1px;
+   overflow: hidden;
+   white-space: nowrap;
 }
 html {
    box-sizing: border-box;
