@@ -32,7 +32,13 @@ Give your existing span the class attribute set to flex, and add two span elemen
          </h1>
          <!--Step 5
 Below your h1 element, create a div element. Give it an id attribute set to years. You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true.-->
-         <div id="years" aria-hidden="true"></div>
+         <!--Step 6
+Within your div element, add three span elements. Give each of them a class attribute set to year, and add the following text (in order): 2019, 2020, and 2021.         -->
+         <div id="years" aria-hidden="true">
+            <span class="year">2019</span>
+            <span class="year">2020</span>
+            <span class="year">2021</span>
+         </div>
       </section>
    </main>
 </body>
