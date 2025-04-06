@@ -69,12 +69,17 @@ Now you will learn a CSS trick to draw triangles.
 This will be used to draw ears on the cat.
 
 Using a class selector, give the .cat-right-ear element height and width properties set to 100px. Set the background-color to white. Set the left and right borders to 35px solid blue. Set the top and bottom borders to 35px solid red.*/
+/*Step 23
+Notice that you now have a white square with thick borders. The borders have diagonal edges which can be used to create triangles.
+
+Within the same class selector adjust height and width to 0. Set the left, right and top border to transparent.
+
+Remove the background-color property, and you should see a triangle.*/
 .cat-right-ear {
-   height: 100px;
-   width: 100px;
-   background-color: white;
-   border-left: 35px solid blue;
-   border-right: 35px solid blue;
-   border-top: 35px solid red;
+   height: 0;
+   width: 0;   
+   border-left: 35px solid transparent;
+   border-right: 35px solid transparent;
+   border-top: 35px solid transparent;
    border-bottom: 35px solid red;
 }
