@@ -74,6 +74,15 @@ section {
 The last part of your table heading is your years. Create a #years selector, and enable flexbox. Justify the content to the end of the flex direction, and make the element sticky. Fix it to the top of its container with top: 0.*/
 /*Step 41
 Now apply some color to your #years. Make the text #fff and the background #0a0a23.*/
+/*Step 42
+The calc() function is a CSS function that allows you to calculate a value based on other values. For example, you can use it to calculate the width of the viewport minus the margin of an element:
+
+Example Code
+.example {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.*/
 #years {
    display: flex;
    justify-content: flex-end;
@@ -81,4 +90,6 @@ Now apply some color to your #years. Make the text #fff and the background #0a0a
    top: 0;
    color: #fff;
    background-color: #0a0a23;
+   margin: 0 -2px;
+   padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
 }
