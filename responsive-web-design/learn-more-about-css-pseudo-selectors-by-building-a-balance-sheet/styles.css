@@ -126,7 +126,12 @@ span {
 }
 /*Step 49
 Create a table selector to target your tables. Set the border-collapse property to collapse, which will allow cell borders to collapse into a single border, instead of a border around each cell. Also set the border property to 0 to hide the borders themselves.*/
+/*Step 50
+Ensure your table fills its container with a width property set to 100%, then position it relatively and give it a top margin of 3rem.*/
 table {
    border-collapse: collapse;
    border: 0;
+   width: 100%;
+   position: relative;
+   margin-top: 3rem;
 }
