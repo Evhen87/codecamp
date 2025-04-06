@@ -97,11 +97,15 @@ The ears should always be placed above the part of the head it overlaps. You can
 z-index is a property you can use to define the order of overlapping HTML elements. Any element with a higher z-index will always be positioned over an element with a lower z-index.
 
 To see z-index in action, set the z-index property of the left ear to -1.*/
+/*Step 33
+That's not the behavior you want. You should make the ears display over the head so the borders that overlap with them don't show.
+
+Instead of -1, set the z-index property of the left ear to 1.*/
 .cat-left-ear {
    position: absolute;
    top: -26px;
    left: -31px;
-   z-index: -1;
+   z-index: 1;
    border-top-left-radius: 90px;
    border-top-right-radius: 10px;
    transform: rotate(-45deg);
