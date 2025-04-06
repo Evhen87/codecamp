@@ -63,3 +63,18 @@ Give the .cat-head element a position property set to absolute. Set a value of 0
 Use a class selector to give your .box element a width of 200px, a height of 600px, and a background color of #000. Also, give it a position of absolute, a top of 800px and a left of 650px.*/
 /*Step 18
 Also, remove the .box CSS rule and its declarations because you don't need them anymore.*/
+/*Step 22
+Now you will learn a CSS trick to draw triangles.
+
+This will be used to draw ears on the cat.
+
+Using a class selector, give the .cat-right-ear element height and width properties set to 100px. Set the background-color to white. Set the left and right borders to 35px solid blue. Set the top and bottom borders to 35px solid red.*/
+.cat-right-ear {
+   height: 100px;
+   width: 100px;
+   background-color: white;
+   border-left: 35px solid blue;
+   border-right: 35px solid blue;
+   border-top: 35px solid red;
+   border-bottom: 35px solid red;
+}
