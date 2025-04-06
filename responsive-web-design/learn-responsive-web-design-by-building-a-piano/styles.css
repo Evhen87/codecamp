@@ -60,7 +60,11 @@ In the new selector, set the background-color to #1d1e22. Also set the content p
 The content property is used to set or override the content of the element. By default, the pseudo-elements created by the ::before and ::after pseudo-selectors are empty, and the elements will not be rendered to the page. Setting the content property to an empty string "" will ensure the element is rendered to the page while still being empty.
 
 If you would like to experiment, try removing the background-color property and setting different values for the content property, such as "♥". Remember to undo these changes when you are done so the tests pass.*/
+/*Step 19
+Give the .key.black--key::after a position property set to absolute and a left property set to -18px.*/
 .key.black--key::after{
+   position: absolute;
+   left: -18px;
    background-color: #1d1e22;
    content: "";
 }
