@@ -189,3 +189,8 @@ Give your tr.total elements a hover effect that changes the background to #99c9f
 tr.total:hover  {
    background-color: #99c9ff;
  }
+ /*Step 60
+Select your td elements with the class value of current, and make the font italic.*/
+td[class="current"] {
+   font-style: italic;
+}
