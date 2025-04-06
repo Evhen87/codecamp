@@ -19,8 +19,11 @@ html {
 }
 /*Step 11
 Now target your #piano element with an id selector. Set background-color property to #00471b, the width property to 992px and the height property to 290px.*/
+/*Step 12
+Set the margin of the #piano to 80px auto.*/
 #piano {
    background-color: #00471b;
    width: 992px;
    height: 290px;
+   margin: 80px auto;
 }
