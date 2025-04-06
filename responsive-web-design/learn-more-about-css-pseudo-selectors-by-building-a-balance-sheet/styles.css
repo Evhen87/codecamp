@@ -83,6 +83,8 @@ Example Code
   width: calc(100% - 20px);
 }
 Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.*/
+/*Step 43
+Adding position sticky moved the element into its own stack. To ensure your #years element does not get hidden by different stacks, add a z-index property set to 999 in the #years rule.*/
 #years {
    display: flex;
    justify-content: flex-end;
@@ -92,4 +94,5 @@ Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 
    background-color: #0a0a23;
    margin: 0 -2px;
    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+   z-index: 999;
 }
