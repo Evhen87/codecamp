@@ -195,7 +195,12 @@ To make the left eye look like an eye, give it a border radius of 60%. Also, usi
 Now you will work on the right eye by using the same approach.
 
 Using a class selector, give your .cat-right-eye element a width of 30px and a height of 40px. Also, give it a background color of #000.*/
-.cat-right-eye {  
+/*Step 47
+Move the right eye into position with a position property of absolute, a top of 54px, and a left of 134px.*/
+.cat-right-eye {
+   position: absolute;
+   top: 54px;
+   left: 134px;
    width: 30px;
    height: 40px;
    background-color: #000;
