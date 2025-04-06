@@ -42,9 +42,17 @@ The last position property value is sticky. sticky positioning is a hybrid of re
 Change the value of the position property of .cat-head to sticky, set top to 0, then remove left and its value.
 
 Note: To see how sticky works, you have to place a couple of texts before and after your .cat-head div element. If you scroll down after that, you'll see that the .cat-head gets stuck to the top and remains there.*/
+/*Step 16
+You should now center the cat head.
+
+Give the .cat-head element a position property set to absolute. Set a value of 0 for the right, left, top, bottom properties, then set its margin property on all sides to auto. That's one way to center an element vertically and horizontally using CSS positioning.*/
 .cat-head {
-   position: sticky;
+   position: absolute;
    top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
    width: 205px;
    height: 180px;
    border: 1px solid #000;
