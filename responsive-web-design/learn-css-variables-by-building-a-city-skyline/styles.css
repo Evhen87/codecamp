@@ -1,5 +1,8 @@
 /*Step 5
 In CSS, you can target everything with an asterisk. Add a border to everything by using the * selector, and giving it a border of 1px solid black. This is a trick that helps visualize where elements are and their size. You will remove this later.*/
+/*Step 6Passed
+Also add a box-sizing of border-box to everything. This will make it so the border you added doesn't add any size to your elements.*/
 * {
    border: 1px solid black;
+   box-sizing: border-box;
 }
