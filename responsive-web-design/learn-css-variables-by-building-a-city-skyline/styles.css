@@ -282,10 +282,11 @@ Give the six new elements these width and height values: 10% and 60% to .fb1, 10
 /*Step 35
 The skyline is coming together. Fill in the background-color property of the foreground buildings. Use your --building-color1 variable to fill in .fb3 and .fb4, --building-color2 for .fb5, --building-color3 for .fb2 and .fb6, and --building-color4 for .fb1.*/
 /*FOREGROUND BUILDINGS - "fb" stands for "foreground building"*/
+/*Step 76
+Move the background-color property and value from .fb1 to .fb1b.*/
 .fb1 {
    width: 10%;
-   height: 60%;
-   background-color: var(--building-color4);
+   height: 60%;   
 }
 /*Step 74
 Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.*/
@@ -293,6 +294,7 @@ Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and heigh
 .fb1b {
    width: 60%;
    height: 10%;
+   background-color: var(--building-color4);
 }
 .fb1c {
    width: 100%;
