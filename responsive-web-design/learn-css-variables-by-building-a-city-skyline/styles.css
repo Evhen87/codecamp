@@ -287,6 +287,18 @@ The skyline is coming together. Fill in the background-color property of the for
    height: 60%;
    background-color: var(--building-color4);
 }
+/*Step 74
+Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.*/
+
+.fb1b {
+   width: 60%;
+   height: 10%;
+}
+.fb1c {
+   width: 100%;
+   height: 80%;
+}
+
 .fb2 {   
    width: 10%;
    height: 40%;
