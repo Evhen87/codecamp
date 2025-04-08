@@ -47,7 +47,13 @@ The buildings are currently stacked on top of each other. Align the buildings by
 }
 /*Step 65
 You want .bb4 to share the properties of .bb1 that center the sections. Instead of duplicating that code, create a new class above the background building comment called building-wrap. Leave it empty for now; this class will be used in a few places to save you some coding.*/
-.building-wrap {}
+/*Step 66
+Move the display, flex-direction, and align-items properties and values from .bb1 to the new building-wrap class.*/
+.building-wrap {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 /*Step 13
 Center the parts of your building by turning the .bb1 element into a flexbox parent. Use the flex-direction and align-items properties to center the children.*/
 /*Step 14
