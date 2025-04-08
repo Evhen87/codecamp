@@ -223,6 +223,21 @@ Remove the background-color property and value from .bb3 since you are using the
    height: 58%;
    background-color: var(--building-color4);
 }
+/*Step 63
+Give the new div elements these width and height values: 3% and 10% to .bb4a, 80% and 5% to .bb4b, and 100% and 85% to .bb4c.*/
+.bb4a {
+   width: 3%;
+   height: 10%;
+}
+.bb4b {
+   width: 80%;
+   height: 5%;
+}
+.bb4c {
+   width: 100%;
+   height: 85%;
+}
+
 /*Step 29
 You want the .foreground-buildings container to sit directly on top of the .background-buildings element. Give it a width and height of 100%, set the position to absolute, and the top to 0. This will make it the same size as the body and move the start of it to the top left corner.*/
 /*Step 32
