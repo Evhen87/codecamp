@@ -5,7 +5,7 @@ Also add a box-sizing of border-box to everything. This will make it so the bord
 /*Step 25
 That didn't work, because the variables you declared in .bb1 do not cascade to the .bb2 and .bb3 sibling elements. That's just how CSS works. Because of this, variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere. Add the :root selector to the top of your stylesheet, and move all your variable declarations there.*/
 :root {
---building-color1: #aa80ff;
+   --building-color1: #aa80ff;
   --building-color2: #66cc99;
   --building-color3: #cc6699;
 }
@@ -83,15 +83,17 @@ Use the same variable as the background-color of the .bb1b, .bb1c, and .bb1d cla
 Give the new buildings width and height properties of: 10% and 50% for .bb2, 10% and 55% for .bb3, and 11% and 58% for .bb4. You will be using almost all percent based units and some flexbox for this project, so everything will be completely responsive.*/
 /*Step 23
 That didn't work. You should add a fallback value to a variable by putting it as the second value of where you use the variable like this: var(--variable-name, fallback-value). The property will use the fallback value when there's a problem with the variable. Add a fallback value of green to the background-color of .bb2.*/
+/*Step 26
+Now that you've worked the bugs out and the buildings are the right colors, you can remove the fallback values in the two places they were used. Go ahead and do that now.*/
 .bb2 {
    width: 10%;
    height: 50%;
-   background-color: var(--building-color2, green);
+   background-color: var(--building-color2);
 }
 .bb3 {
    width: 10%;
    height: 55%;
-   background-color: var(--building-color3, pink);
+   background-color: var(--building-color3);
 }
 .bb4 {
    width: 11%;
