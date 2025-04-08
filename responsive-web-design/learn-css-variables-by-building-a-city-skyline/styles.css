@@ -288,6 +288,11 @@ Move the background-color property and value from .fb1 to .fb1b.*/
    width: 10%;
    height: 60%;   
 }
+/*Step 79
+You're going to use some more border tricks for the top section. Add a border-bottom with a value of 7vh solid var(--building-color4) to .fb1a. This will put a 7vh height border on the bottom. But since the element has zero size, it only shows up as a 2px wide line from the 1px border that is on all the elements.*/
+.fb1a {
+   border-bottom: 7vh solid var(--building-color4);
+ }
 /*Step 74
 Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.*/
 
