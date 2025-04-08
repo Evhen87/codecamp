@@ -57,6 +57,13 @@ Move the display, flex-direction, and align-items properties and values from .bb
    flex-direction: column;
    align-items: center;
 }
+/*Step 71
+The windows are stacked on top of each other at the left of the section, behind the purple building. Add a new class below .building-wrap called window-wrap. Make .window-wrap a flexbox container, and use the align-items and justify-content properties to center its child elements vertically and evenly space them in their parent, respectively.*/
+.window-wrap {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
 /*Step 13
 Center the parts of your building by turning the .bb1 element into a flexbox parent. Use the flex-direction and align-items properties to center the children.*/
 /*Step 14
