@@ -142,9 +142,26 @@ Now that you've worked the bugs out and the buildings are the right colors, you 
 }
 /*Step 49
 Give .bb2b a width and height of 100% to make it fill the building container. You will add something on the top a little later.*/
+/*Step 51
+Gradient transitions often gradually change from one color to another. When a more abrupt change is required, the transition can be made with a hard stop like this:
+
+Example Code
+linear-gradient(
+  var(--first-color) 0%,
+  var(--first-color) 40%,
+  var(--second-color) 40%,
+  var(--second-color) 80%
+);
+Add a linear-gradient to .bb2b that uses --building-color2 from 0% to 6% and --window-color2 from 6% to 9%.*/
 .bb2b {
    width: 100%;
    height: 100%;
+   background: linear-gradient(
+      var(--building-color2) 0%,
+      var(--building-color2) 6%,
+      var(--window-color2) 6%,
+      var(--window-color2) 9%
+   );
 }
 .bb3 {
    width: 10%;
