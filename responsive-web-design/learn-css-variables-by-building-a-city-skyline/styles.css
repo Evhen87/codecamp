@@ -80,9 +80,10 @@ gradient-type(
 In the example, color1 is solid at the top, color2 is solid at the bottom, and in between it transitions evenly from one to the next. In .bb1a, add a background property below the background-color property. Set it as a gradient of type linear-gradient that uses --building-color1 as the first color and --window-color1 as the second.*/
 /*Step 41
 You want to add the same gradient to the next two sections. Instead of doing that, create a new class selector called bb1-window, and move the height and background properties and values from .bb1a to the new class selector.*/
+/*Step 43
+You don't need the height or background-color properties in .bb1a, .bb1b or .bb1c anymore, so go ahead and remove them.*/
 .bb1a {
-   width: 70%;      
-   background-color: var(--building-color1);   
+   width: 70%;     
 }
 .bb1-window {
    height: 10%;
@@ -91,14 +92,10 @@ You want to add the same gradient to the next two sections. Instead of doing tha
 /*Step 16
 Use the same variable as the background-color of the .bb1b, .bb1c, and .bb1d classes to fill in the rest of the building.*/
 .bb1b {
-   width: 80%;
-   height: 10%;
-   background-color: var(--building-color1);
+   width: 80%;   
 }
 .bb1c {
-   width: 90%;
-   height: 10%;
-   background-color: var(--building-color1);
+   width: 90%;   
 }
 .bb1d {
    width: 100%;
