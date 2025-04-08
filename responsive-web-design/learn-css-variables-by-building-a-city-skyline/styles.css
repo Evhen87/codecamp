@@ -15,9 +15,14 @@ body {
 }
 /*Step 9
 Give your .background-buildings element a width and height of 100% to make it the full width and height of its parent, the body.*/
+/*Step 20
+The buildings are currently stacked on top of each other. Align the buildings by turning the .background-buildings element into a flexbox parent. Use the align-items and justify-content properties to evenly space the buildings across the bottom of the element.*/
 .background-buildings {
    width: 100%;
    height: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-evenly;
 }
 /*Step 13
 Center the parts of your building by turning the .bb1 element into a flexbox parent. Use the flex-direction and align-items properties to center the children.*/
