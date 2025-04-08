@@ -44,6 +44,10 @@ Now you have something that is resembling a building. You are ready to create yo
 Create a new variable below your --building-color1 variable. Name your new variable --building-color2 and give it a value of #66cc99. Then set it as the background-color of .bb2.*/
 /*Step 24
 Create a new variable below the other ones named --building-color3 and give it a value of #cc6699. Then use it as the background-color of the .bb3 class and give it a fallback value of pink.*/
+/*Step 38
+Your code is starting to get quite long. Add a comment above the .fb1 class that says FOREGROUND BUILDINGS - "fb" stands for "foreground building" to help people understand your code. Above the .bb1 class add another comment that says BACKGROUND BUILDINGS - "bb" stands for "background building". If you don't remember, comments in CSS look like this: /* Comment here */
+
+/*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1 {
    width: 10%;
    height: 70%;
@@ -118,6 +122,7 @@ Now that you did that, you can delete the old .foreground-buildings declaration 
 Give the six new elements these width and height values: 10% and 60% to .fb1, 10% and 40% to .fb2, 10% and 35% to .fb3, 8% and 45% to .fb4, 10% and 33% to .fb5, and 9% and 38% to .fb6.*/
 /*Step 35
 The skyline is coming together. Fill in the background-color property of the foreground buildings. Use your --building-color1 variable to fill in .fb3 and .fb4, --building-color2 for .fb5, --building-color3 for .fb2 and .fb6, and --building-color4 for .fb1.*/
+/*FOREGROUND BUILDINGS - "fb" stands for "foreground building"*/
 .fb1 {
    width: 10%;
    height: 60%;
