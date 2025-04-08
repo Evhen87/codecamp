@@ -6,11 +6,14 @@ Also add a box-sizing of border-box to everything. This will make it so the bord
 That didn't work, because the variables you declared in .bb1 do not cascade to the .bb2 and .bb3 sibling elements. That's just how CSS works. Because of this, variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere. Add the :root selector to the top of your stylesheet, and move all your variable declarations there.*/
 /*Step 27
 Create another variable named --building-color4 and give it a value of #538cc6. Make sure it's in the :root selector this time. Then use it to fill in the last building.*/
+/*Step 39
+Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings.*/
 :root {
    --building-color1: #aa80ff;
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
+  --window-color1: black;
 }
 * {
    border: 1px solid black;
