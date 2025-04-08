@@ -157,9 +157,9 @@ After you add these, you can see how a thick border on an element gives you some
 Next, remove the width and height from .bb2a, and change the border-left and border-right to use 5vw instead of 1vw. The element will now have zero size and the borders will come together in the middle.*/
 /*Step 56
 Next, change the two #999 of .bb2a to transparent. This will make the left and right borders invisible.*/
-.bb2a {
-   margin: auto;
-   border-top: 1vw solid #000;
+/*Step 57
+Remove the margin and border-top properties and values from .bb2a to turn it into a triangle for the top of the building.*/
+.bb2a {   
    border-bottom: 1vw solid #000;
    border-left: 5vw solid transparent;
    border-right: 5vw solid transparent;
