@@ -27,9 +27,11 @@ body {
 Give your .background-buildings element a width and height of 100% to make it the full width and height of its parent, the body.*/
 /*Step 20
 The buildings are currently stacked on top of each other. Align the buildings by turning the .background-buildings element into a flexbox parent. Use the align-items and justify-content properties to evenly space the buildings across the bottom of the element.*/
-.background-buildings {
+.background-buildings, .foreground-buildings {
    width: 100%;
    height: 100%;
+   position: absolute;
+   top: 0;
    display: flex;
    align-items: flex-end;
    justify-content: space-evenly;
@@ -107,11 +109,11 @@ Now that you've worked the bugs out and the buildings are the right colors, you 
 You want the .foreground-buildings container to sit directly on top of the .background-buildings element. Give it a width and height of 100%, set the position to absolute, and the top to 0. This will make it the same size as the body and move the start of it to the top left corner.*/
 /*Step 32
 Add the same display, align-items, and justify-content properties and values to .foreground-buildings that you used on .background-buildings. Again, this will use Flexbox to evenly space the buildings across the bottom of their container.*/
+/*Step 33
+To begin optimizing your code, first move the position and top properties and values from .foreground-buildings to .background-buildings, then change the existing .background-buildings selector to also target .foreground-buildings, so the styles will be applied to both. You can use a comma (,) to separate selectors like this: selector1, selector2.*/
 .foreground-buildings {
    width: 100%;
    height: 100%;
-   position: absolute;
-   top: 0;
    display: flex;
    align-items: flex-end;
    justify-content: space-evenly;
