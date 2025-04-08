@@ -8,12 +8,15 @@ That didn't work, because the variables you declared in .bb1 do not cascade to t
 Create another variable named --building-color4 and give it a value of #538cc6. Make sure it's in the :root selector this time. Then use it to fill in the last building.*/
 /*Step 39
 Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings.*/
+/*Step 50
+Create a new variable in :root named window-color2 with a value of #8cd9b3. This will be used as the secondary color for this building.*/
 :root {
    --building-color1: #aa80ff;
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
   --window-color1: black;
+  --window-color2: #8cd9b3;
 }
 * {
    border: 1px solid black;
