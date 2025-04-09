@@ -385,6 +385,13 @@ Give the .fb3a element a width of 80% and height of 15%. Then give the .fb3b ele
    height: 35%;
    background-color: var(--building-color1);
 }
+/*Step 93
+Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value.*/
+.fb3-window {
+   width: 25%;
+   height: 80%;
+   background-color: var(--window-color1);
+}
 
 /*Step 37
 Move the position of .fb4 relative to where it is now by adding a position of relative and left of 10% to it. Do the same for .fb5 but use right instead of left. This will cover up the remaining white space in between the buildings.*/
