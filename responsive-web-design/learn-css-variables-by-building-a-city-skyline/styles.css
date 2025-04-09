@@ -400,18 +400,20 @@ Move the position of .fb4 relative to where it is now by adding a position of re
 .fb4 {
    width: 8%;
    height: 45%;
-   background-color: var(--building-color1);
    position: relative;
    left: 10%;
 }
 /*Step 97
 Give .fb4b a width of 100% and height of 89%.*/
+/*Step 98
+Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4.*/
 .fb4a {
    
 }
 .fb4b {
    width: 100%;
    height: 89%;
+   background-color: var(--building-color1);
 }
 
 .fb5 {
