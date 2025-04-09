@@ -26,8 +26,9 @@ With CSS variables you can change values without searching everywhere in the sty
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
 }
+/*Step 110
+Okay, the buildings are done. Go back to the * selector and remove the border you applied to everything at the beginning and the buildings will come together.*/
 * {
-   border: 1px solid black;
    box-sizing: border-box;
 }
 /*Step 7
