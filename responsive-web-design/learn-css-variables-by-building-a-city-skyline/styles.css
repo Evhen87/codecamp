@@ -14,12 +14,14 @@ Create a new variable in :root named window-color2 with a value of #8cd9b3. This
 On to the next building! Create a new variable called --window-color3 in :root and give it a value of #d98cb3. This will be the secondary color for the pink buildings.*/
 /*Step 68
 Create a new variable called --window-color4 in :root and give it a value of #8cb3d9. This will be the secondary color for the last background building.*/
+/*Step 95
+With CSS variables you can change values without searching everywhere in the stylesheet. Change the --window-color1 value to #bb99ff.*/
 :root {
    --building-color1: #aa80ff;
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
-  --window-color1: black;
+  --window-color1: #bb99ff;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
