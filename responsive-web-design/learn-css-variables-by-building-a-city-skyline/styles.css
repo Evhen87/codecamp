@@ -500,6 +500,18 @@ Example Code
 
 }  
 Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.*/
-@media (max-width: 1000px) {
+/*Step 115
+Copy and paste your whole sky class along with all of its properties and values into the media query. You are going to make another color scheme for the skyline that changes it from day to night.
 
+Note: You are going to need to scroll past the editable region to copy the class.*/
+@media (max-width: 1000px) {
+   .sky {
+      background: radial-gradient(
+         circle closest-corner at 15% 15%,
+         #ffcf33 0%,
+         #ffcf33 20%,
+         #ffff66 21%,
+         #bbeeff 100%
+      );
+   }
 }
