@@ -421,6 +421,8 @@ Give the .fb4-window elements a width of 30%, height of 10%, and border-radius o
    width: 30%;
    height: 10%;
    border-radius: 50%;
+   background-color: var(--window-color1);
+  margin: 10%;
 }
 .fb5 {
    width: 10%;
