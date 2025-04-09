@@ -407,8 +407,11 @@ Move the position of .fb4 relative to where it is now by adding a position of re
 Give .fb4b a width of 100% and height of 89%.*/
 /*Step 98
 Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4.*/
+/*Step 103
+This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.*/
 .fb4a {
-   
+   border-top: 5vh solid transparent;
+   border-left: 8vw solid var(--building-color1);
 }
 /*Step 102
 The windows are stacked on top of each other on the rightmost purple building. Turn the building into a flexbox parent, and use the flex-wrap property to put the windows side by side, and push them down to a new row when they don't fit.*/
