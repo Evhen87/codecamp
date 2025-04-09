@@ -366,20 +366,24 @@ Give the .fb2-window elements a width of 22%, height of 100%, and a background-c
    height: 100%;
    background-color: var(--window-color3);
 }
+/*Step 90
+Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b.*/
 .fb3 {
    width: 10%;
    height: 35%;
-   background-color: var(--building-color1);
+   
 }
 /*Step 89
 Give the .fb3a element a width of 80% and height of 15%. Then give the .fb3b element a width of 100% and height of 35%.*/
 .fb3a {
    width: 80%;
    height: 15%;
+   background-color: var(--building-color1);
 }
 .fb3b {
    width: 100%;
    height: 35%;
+   background-color: var(--building-color1);
 }
 
 /*Step 37
