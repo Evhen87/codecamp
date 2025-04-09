@@ -404,6 +404,16 @@ Move the position of .fb4 relative to where it is now by adding a position of re
    position: relative;
    left: 10%;
 }
+/*Step 97
+Give .fb4b a width of 100% and height of 89%.*/
+.fb4a {
+   
+}
+.fb4b {
+   width: 100%;
+   height: 89%;
+}
+
 .fb5 {
    width: 10%;
    height: 33%;
