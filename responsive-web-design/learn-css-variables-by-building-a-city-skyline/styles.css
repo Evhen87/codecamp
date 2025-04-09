@@ -492,3 +492,14 @@ You can remove the background-color for this building now, since it isn't needed
      var(--window-color3) 30%
    )
  }
+/*Step 114
+A media query can be used to change styles based on certain conditions, and they look like this:
+
+Example Code
+@media (condition) {
+
+}  
+Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.*/
+@media (max-width: 1000px) {
+
+}
