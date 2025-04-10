@@ -82,4 +82,13 @@ function changeBackgroundColor() {
    bgHexCodeSpanElement.innerText = color;
    body.style.backgroundColor = color;
 }
-changeBackgroundColor();
+/*Step 7
+CamperBot is trying to create a new variable called btn to store the reference to the button element with the id of click-btn
+
+However, when they try to log the button element to the console, they see that the button element is null.
+
+Open up the index.html to see the correct id name for that button element.
+
+Then fix the error for the document.querySelector("#click-btn"); line.*/
+const btn = document.querySelector("#btn");
+console.log(btn);
