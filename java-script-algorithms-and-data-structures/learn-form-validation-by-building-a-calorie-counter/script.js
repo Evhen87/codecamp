@@ -8,4 +8,8 @@ Example Code
 Example Code
 const mainTitleElement = document.getElementById('title');
 Begin by getting the form element (using the id) and storing it in a variable called calorieCounter.*/
+/*Step 15
+Get your #budget element and assign it to budgetNumberInput, and your #entry-dropdown element and assign it to entryDropdown.*/
 const calorieCounter = document.getElementById('calorie-counter');
+const budgetNumberInput = document.getElementById('budget');
+const entryDropdown = document.getElementById('entry-dropdown');
