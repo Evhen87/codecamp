@@ -144,3 +144,12 @@ When you open the console, you should see the result of null. The match method r
 null in JavaScript is a special primitive that represents the intentional absence of a value. In a boolean context, null is considered falsy which evaluates to false in a conditional statement.
 
 Now that you have finished testing your isInvalidInput function, you can remove the console.log statement.*/
+/*Step 38
+Now you need to retrieve the value of entryDropdown.value to get the currently selected option from the dropdown.
+
+Print entryDropdown.value to the console to see its value.
+
+Since entryDropdown.value is in a static context (outside of an event listener), it only shows the value at the moment the code runs. This means it won't automatically update as the user interacts with the dropdown.
+
+It will capture the initial value (in this case, "breakfast") and won't reflect any changes the user makes afterward.*/
+console.log(entryDropdown.value);
