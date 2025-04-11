@@ -59,5 +59,5 @@ Example Code
 const regex = /[helo]/;
 Turn your +-\s pattern into a character class. Note that you no longer need to escape the + character, because you are using a character class.*/
 function cleanInputString(str) {
-   const regex = /[+-\s]/;
+   const regex = /[+-\s]/g;
 }
