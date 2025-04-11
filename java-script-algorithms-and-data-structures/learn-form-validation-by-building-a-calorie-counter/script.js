@@ -82,3 +82,10 @@ Inside your cleanInputString function, add a console.log() statement with two ar
 To see the results from the cleanInputString function, you will need to add a console.log() statement. Inside that console statement, call the cleanInputString function with the string value of "+-99" as an argument.
 
 Open up the console and you should see the original string followed by the cleaned string value with the +- removed.*/
+/*Step 28
+In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
+
+Start by creating a function called isInvalidInput – it should take a single str parameter.*/
+function isInvalidInput(str) {
+
+}
