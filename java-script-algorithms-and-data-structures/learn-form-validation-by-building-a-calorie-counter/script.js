@@ -152,4 +152,10 @@ Print entryDropdown.value to the console to see its value.
 Since entryDropdown.value is in a static context (outside of an event listener), it only shows the value at the moment the code runs. This means it won't automatically update as the user interacts with the dropdown.
 
 It will capture the initial value (in this case, "breakfast") and won't reflect any changes the user makes afterward.*/
-console.log(entryDropdown.value);
+/*Step 39
+Now that you have finished testing the value of entryDropdown.value, you can remove the console.log statement.
+
+Your next step is to allow users to add entries to the calorie counter. Declare an empty function addEntry. This function should not take any parameters.*/
+function addEntry() {
+
+}
