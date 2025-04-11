@@ -102,6 +102,8 @@ Number inputs only allow the e to occur between two digits. To match any number,
 Add this character class before and after e in your pattern.*/
 /*Step 32
 The + modifier in a regex allows you to match a pattern that occurs one or more times. To match your digit pattern one or more times, add a plus after each of the digit character classes. For example: [0-9]+.*/
+/*Step 33
+There is a shorthand character class to match any digit: \d. Replace your [0-9] character classes with this shorthand.*/
 function isInvalidInput(str) {
-   const regex = /[0-9]+e[0-9]+/i;
+   const regex = /\d+e\d+/i;
 }
