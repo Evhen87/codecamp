@@ -300,6 +300,15 @@ Your output.innerHTML string will need a span element. Create that, and give it 
 Do not give your span any text yet.*/
 /*Step 83
 Give your span the text remainingCalories Calorie surplusOrDeficit, using interpolation to replace remainingCalories and surplusOrDeficit with the appropriate variables.*/
+/*Step 84
+When the user has a calorie surplus, the remainingCalories value will be negative. You don't want to display a negative number in the result string.
+
+Math.abs() is a built-in JavaScript method that will return the absolute value of a number.
+
+Example Code
+const num = -5;
+Math.abs(num); // 5
+In your span text, wrap your remainingCalories reference in Math.abs() to ensure that the value is positive.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -320,7 +329,7 @@ function calculateCalories(e) {
    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>`;
+   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>`;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
