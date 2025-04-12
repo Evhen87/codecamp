@@ -283,6 +283,10 @@ Your getCaloriesFromInputs function will set the global error flag isError to tr
 It is time to start preparing your calculations. Start by declaring a consumedCalories variable, and assign it the sum of breakfastCalories, lunchCalories, dinnerCalories, and snacksCalories (note that order matters for the tests). Be sure to do this after your if statement.*/
 /*Step 79
 Now declare a remainingCalories variable, and give it the value of subtracting consumedCalories from budgetCalories and adding exerciseCalories.*/
+/*Step 80
+You need to know if the user is in a caloric surplus or deficit. A caloric surplus is when you consume more calories than you burn, and a caloric deficit is when you burn more calories than you consume. Burning as many calories as you consume is called maintenance, and can be thought of as a surplus or deficit of 0, depending on your goals.
+
+Declare a surplusOrDeficit variable. Then use a ternary operator to set surplusOrDeficit to the string "Surplus" or "Deficit" depending on whether remainingCalories is less than 0. If it is less than 0, then surplusOrDeficit should be "Surplus". Otherwise, it should be "Deficit".*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -302,6 +306,7 @@ function calculateCalories(e) {
    }
    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
