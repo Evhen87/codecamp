@@ -451,3 +451,8 @@ Call the .addEventListener() method on the addEntryButton. Pass in the string "c
 
 Note that you should not call addEntry, but pass the variable (or function reference) directly.*/
 addEntryButton.addEventListener("click", addEntry);
+/*Step 89
+If you click on your Calculate Remaining Calories button, you'll see that nothing happens. You still need to mount the event listener.
+
+Add an event listener to your calorieCounter element. The event type should be submit, and the callback function should be calculateCalories.*/
+calorieCounter.addEventListener("submit", calculateCalories);
