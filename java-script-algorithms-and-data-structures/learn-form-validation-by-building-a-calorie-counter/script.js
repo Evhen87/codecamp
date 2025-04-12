@@ -228,6 +228,10 @@ Use the addition assignment operator += to append your HTMLString variable to ta
 Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
 
 This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.*/
+/*Step 55
+Your other bug occurs if you add a Breakfast entry, fill it in, then add a second Breakfast entry. You'll see that the values you added disappeared.
+
+This is because you are updating innerHTML directly, which does not preserve your input content. Change your innerHTML assignment to use the insertAdjacentHTML() method of targetInputContainer instead. Do not pass any arguments yet.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
@@ -237,7 +241,7 @@ function addEntry() {
    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" >
    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
    <input type="number" id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" min="0">`;
-   targetInputContainer.innerHTML += HTMLString;
+   targetInputContainer.insertAdjacentHTML();
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
