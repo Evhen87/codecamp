@@ -224,11 +224,15 @@ const formContent = `
 `;
 formElement.innerHTML += formContent;
 Use the addition assignment operator += to append your HTMLString variable to targetInputContainer.innerHTML.*/
+/*Step 54
+Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
+
+This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
    }
-   const entryNumber = targetInputContainer.querySelectorAll().length;
+   const entryNumber = targetInputContainer.querySelectorAll().length + 1;
    const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" >
    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
