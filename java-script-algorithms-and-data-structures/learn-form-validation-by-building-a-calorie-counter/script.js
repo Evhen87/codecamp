@@ -311,6 +311,8 @@ Here is an example:
 Example Code
 Number('10'); // returns the number 10
 Number('abc'); // returns NaN*/
+/*Step 67
+After your for loop has completed, return the calories value.*/
 function getCaloriesFromInputs(list) {
    let calories = 0;
    for (const item of list) {
@@ -323,6 +325,7 @@ function getCaloriesFromInputs(list) {
       }
       calories += Number(currVal);
    };
+   return calories;
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
