@@ -462,6 +462,10 @@ After your loop completes, you need to clear the budgetNumberInput. Set the valu
 You also need to clear the output element's text. You can do this by setting the innerText property to an empty string.
 
 The difference between innerText and innerHTML is that innerText will not render HTML elements, but will display the tags and content as raw text.*/
+/*Step 96
+To finish off this function, you need to restore the hide class to the output element. The classList property has an .add() method which is the opposite of the .remove() method. It accepts a string representing the class to add to the element.
+
+Add the hide class to your output.*/
 function clearForm() {
    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
    for (const container of inputContainers) {
@@ -469,6 +473,7 @@ function clearForm() {
    }
    budgetNumberInput.value = '';
    output.innerText = '';
+   output.classList.add('hide');
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
