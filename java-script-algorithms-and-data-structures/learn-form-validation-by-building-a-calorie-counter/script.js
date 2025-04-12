@@ -287,6 +287,8 @@ Now declare a remainingCalories variable, and give it the value of subtracting c
 You need to know if the user is in a caloric surplus or deficit. A caloric surplus is when you consume more calories than you burn, and a caloric deficit is when you burn more calories than you consume. Burning as many calories as you consume is called maintenance, and can be thought of as a surplus or deficit of 0, depending on your goals.
 
 Declare a surplusOrDeficit variable. Then use a ternary operator to set surplusOrDeficit to the string "Surplus" or "Deficit" depending on whether remainingCalories is less than 0. If it is less than 0, then surplusOrDeficit should be "Surplus". Otherwise, it should be "Deficit".*/
+/*Step 81
+You need to construct the HTML string that will be displayed in the output element. Start by assigning an empty template literal to the innerHTML property of the output element on a new line at the end of the function.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -307,6 +309,7 @@ function calculateCalories(e) {
    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+   output.innerHTML = ``;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
