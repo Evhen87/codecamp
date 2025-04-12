@@ -190,9 +190,12 @@ Each entry will have a text input for the entry's name, and a number input for t
 Pass the string input[type="text"] to the querySelectorAll() method. Remember that if you use single quotes for your string, you must also use double quotes within it (or vice-versa).
 
 This will return a NodeList of all the text inputs in the form. You can then access the length property of the NodeList to get the number of entries. Do this on the same line.*/
+/*Step 46
+Now you need to build your dynamic HTML string to add to the webpage. Declare a new HTMLString variable, and assign it an empty template literal string.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
    }
    const entryNumber = targetInputContainer.querySelectorAll().length;
+   const HTMLString = ``;
 }
