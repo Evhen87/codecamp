@@ -298,6 +298,8 @@ console.log(firstName.toLowerCase()); // Output: jessica
 Your output.innerHTML string will need a span element. Create that, and give it a class attribute set to the surplusOrDeficit variable. Your surplusOrDeficit variable should be converted to lower case using the toLowerCase() method.
 
 Do not give your span any text yet.*/
+/*Step 83
+Give your span the text remainingCalories Calorie surplusOrDeficit, using interpolation to replace remainingCalories and surplusOrDeficit with the appropriate variables.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -318,7 +320,7 @@ function calculateCalories(e) {
    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
+   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>`;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
