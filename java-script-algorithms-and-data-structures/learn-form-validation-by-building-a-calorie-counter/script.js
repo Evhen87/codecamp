@@ -309,6 +309,10 @@ Example Code
 const num = -5;
 Math.abs(num); // 5
 In your span text, wrap your remainingCalories reference in Math.abs() to ensure that the value is positive.*/
+/*Step 85
+After your span element, add an hr element to create a horizontal line.
+
+To keep your code clean and readable, you should add this on a new line in the template literal.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -329,7 +333,9 @@ function calculateCalories(e) {
    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>`;
+   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
+   <hr>
+   `;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
