@@ -261,11 +261,16 @@ Your function needs to get the values from the entries the user has added.
 Declare a breakfastNumberInputs variable, and give it the value of calling document.querySelectorAll() with the selector #breakfast input[type='number']. This will return any number inputs that are in the #breakfast element.*/
 /*Step 71
 Using that same syntax, query your number inputs in the #lunch element and assign them to lunchNumberInputs.*/
+/*Step 72
+Following the same pattern, query for your number inputs in the #dinner, #snacks, and #exercise elements. Assign them to variables following the naming scheme of the previous two.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
    const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type='number']");
    const lunchNumberInputs = document.querySelectorAll("#lunch input[type='number']");
+   const dinnerNumberInputs = document.querySelectorAll("#dinner input[type='number']");
+   const snacksNumberInputs = document.querySelectorAll("#snacks input[type='number']");
+   const exerciseNumberInputs = document.querySelectorAll("#exercise input[type='number']");
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
