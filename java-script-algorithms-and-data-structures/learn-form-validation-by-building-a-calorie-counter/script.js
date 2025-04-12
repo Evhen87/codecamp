@@ -257,8 +257,23 @@ Your next step is to write a function that will get the calorie counts from the 
 Declare a getCaloriesFromInputs function, and give it a parameter called list.*/
 /*Step 58
 In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.*/
+/*Step 59
+The list parameter is going to be the result of a query selector, which will return a NodeList. A NodeList is a list of elements like an array. It contains the elements that match the query selector. You will need to loop through these elements in the list.
+
+In previous steps, you learned how to loop through an array using a for loop. You can also use a for...of loop to loop through an array and a NodeList.
+
+A for...of loop is used to iterate over elements in an iterable object like an array. The variable declared in the loop represents the current element being iterated over.
+
+Example Code
+for (const element of elementArray) {
+  console.log(element);
+}
+Create a for...of loop that loops through the list. For the loop's variable name, use const to declare a variable called item.*/
 function getCaloriesFromInputs(list) {
    let calories = 0;
+   for (const item of list) {
+
+   };
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
