@@ -436,8 +436,24 @@ function getCaloriesFromInputs(list) {
 Your final feature to add is the ability for a user to clear the form. Start by declaring an empty function called clearForm – it should not take any arguments.*/
 /*Step 91
 You need to get all of the input containers. Declare an inputContainers variable, and assign it to the value of querying the document for all elements with the class input-container.*/
+/*Step 92
+Remember that document.querySelectorAll returns a NodeList, which is array-like but is not an array. However, the Array object has a .from() method that accepts an array-like and returns an array. This is helpful when you want access to more robust array methods, which you will learn about in a future project.
+
+The following example takes a NodeList of li elements and converts it to an array of li elements:
+
+Example Code
+<ul>
+  <li>List 1</li>
+  <li>List 2</li>
+  <li>List 3</li>
+</ul>
+Example Code
+const listItemsArray = Array.from(document.querySelectorAll('li'));
+
+console.log(listItemsArray); //Output: (3) [li, li, li]
+Wrap your inputContainers query selector in Array.from(). Do this on the same line as your declaration.*/
 function clearForm() {
-   const inputContainers = document.querySelectorAll(".input-container");
+   const inputContainers = Array.from(document.querySelectorAll('.input-container'));
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
