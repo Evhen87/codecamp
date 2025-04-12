@@ -456,11 +456,14 @@ Wrap your inputContainers query selector in Array.from(). Do this on the same li
 It is time for another loop. Create a for...of loop with a variable called container to iterate through the inputContainers array.
 
 Inside the loop, set the innerHTML property of the container to an empty string. This will clear all of the contents of that input container.*/
+/*Step 94
+After your loop completes, you need to clear the budgetNumberInput. Set the value property of budgetNumberInput to an empty string.*/
 function clearForm() {
    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
    for (const container of inputContainers) {
       container.innerHTML = "";
    }
+   budgetNumberInput.value = '';
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
