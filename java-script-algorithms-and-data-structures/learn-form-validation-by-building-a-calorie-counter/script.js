@@ -499,3 +499,8 @@ If you click on your Calculate Remaining Calories button, you'll see that nothin
 
 Add an event listener to your calorieCounter element. The event type should be submit, and the callback function should be calculateCalories.*/
 calorieCounter.addEventListener("submit", calculateCalories);
+/*Step 97
+To complete this project, add an event listener to the clearButton button. When the button is clicked, it should call the clearForm function.
+
+Congratulations! Your project is complete.*/
+clearButton.addEventListener("click", clearForm);
