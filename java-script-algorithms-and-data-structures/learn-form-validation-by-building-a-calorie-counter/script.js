@@ -255,8 +255,10 @@ Great! Now you can add entries without losing your previous inputs.
 Your next step is to write a function that will get the calorie counts from the user's entries.
 
 Declare a getCaloriesFromInputs function, and give it a parameter called list.*/
+/*Step 58
+In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.*/
 function getCaloriesFromInputs(list) {
-
+   let calories = 0;
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
