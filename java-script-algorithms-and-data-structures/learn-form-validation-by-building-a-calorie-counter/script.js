@@ -269,6 +269,8 @@ Now that you have your lists of elements, you can pass them to your getCaloriesF
 Declare a breakfastCalories variable, and assign it the result of calling getCaloriesFromInputs with breakfastNumberInputs as the argument.*/
 /*Step 74
 Now declare a lunchCalories variable, and give it the value of calling getCaloriesFromInputs with your lunchNumberInputs.*/
+/*Step 75
+Following this same pattern, declare variables for the number inputs in the #dinner, #snacks, and #exercise elements. Assign them the appropriate getCaloriesFromInputs calls.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -279,6 +281,9 @@ function calculateCalories(e) {
    const exerciseNumberInputs = document.querySelectorAll("#exercise input[type='number']");
    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+   const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+   const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+   const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
