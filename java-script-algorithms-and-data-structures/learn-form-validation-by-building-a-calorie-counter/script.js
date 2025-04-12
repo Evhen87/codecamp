@@ -452,8 +452,15 @@ const listItemsArray = Array.from(document.querySelectorAll('li'));
 
 console.log(listItemsArray); //Output: (3) [li, li, li]
 Wrap your inputContainers query selector in Array.from(). Do this on the same line as your declaration.*/
+/*Step 93
+It is time for another loop. Create a for...of loop with a variable called container to iterate through the inputContainers array.
+
+Inside the loop, set the innerHTML property of the container to an empty string. This will clear all of the contents of that input container.*/
 function clearForm() {
    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+   for (const container of inputContainers) {
+      container.innerHTML = "";
+   }
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
