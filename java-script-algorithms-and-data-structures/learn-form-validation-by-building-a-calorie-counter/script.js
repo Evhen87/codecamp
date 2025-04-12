@@ -202,6 +202,28 @@ After your label element, and on a new line in your template string, create an i
 Create another label element (on a new line) at the end of your HTMLString. This label should have the text Entry # Calories, using your template literal syntax to replace # with the value of entryNumber, and the for attribute set to X-#-calories, where X is the value of entryDropdown and # is the value of entryNumber.*/
 /*Step 51
 Finally, on a new line after your second label, create another input element. Give this one a type attribute set to number, a min attribute set to 0 (to ensure negative calories cannot be added), a placeholder attribute set to Calories, and an id attribute that matches the for attribute of your second label element.*/
+/*Step 52
+To see your new HTML content for the targetInputContainer, you will need to use the innerHTML property.
+
+The innerHTML property sets or returns the HTML content inside an element.
+
+Here is a form element with a label and input element nested inside.
+
+Example Code
+<form id="form">
+  <label for="first-name">First name</label>
+  <input id="first-name" type="text">
+</form>
+If you want to add another label and input element inside the form, then you can use the innerHTML property as shown below:
+
+Example Code
+const formElement = document.getElementById("form");
+const formContent = `
+  <label for="last-name">Last name</label>
+  <input id="last-name" type="text">
+`;
+formElement.innerHTML += formContent;
+Use the addition assignment operator += to append your HTMLString variable to targetInputContainer.innerHTML.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
@@ -211,4 +233,5 @@ function addEntry() {
    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" >
    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
    <input type="number" id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" min="0">`;
+   targetInputContainer.innerHTML += HTMLString;
 }
