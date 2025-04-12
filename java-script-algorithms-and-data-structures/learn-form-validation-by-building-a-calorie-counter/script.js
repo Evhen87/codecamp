@@ -458,12 +458,17 @@ It is time for another loop. Create a for...of loop with a variable called conta
 Inside the loop, set the innerHTML property of the container to an empty string. This will clear all of the contents of that input container.*/
 /*Step 94
 After your loop completes, you need to clear the budgetNumberInput. Set the value property of budgetNumberInput to an empty string.*/
+/*Step 95
+You also need to clear the output element's text. You can do this by setting the innerText property to an empty string.
+
+The difference between innerText and innerHTML is that innerText will not render HTML elements, but will display the tags and content as raw text.*/
 function clearForm() {
    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
    for (const container of inputContainers) {
       container.innerHTML = "";
    }
    budgetNumberInput.value = '';
+   output.innerText = '';
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
