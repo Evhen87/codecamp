@@ -279,6 +279,8 @@ A NodeList is an array-like object, which means you can iterate through it and i
 Declare a budgetCalories variable and set it to the result of calling getCaloriesFromInputs – pass an array containing your budgetNumberInput as the argument.*/
 /*Step 77
 Your getCaloriesFromInputs function will set the global error flag isError to true if an invalid input is detected. Add an if statement to your calculateCalories function that checks the truthiness of your global error flag, and if it is truthy then use return to end the function execution.*/
+/*Step 78
+It is time to start preparing your calculations. Start by declaring a consumedCalories variable, and assign it the sum of breakfastCalories, lunchCalories, dinnerCalories, and snacksCalories (note that order matters for the tests). Be sure to do this after your if statement.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -296,6 +298,7 @@ function calculateCalories(e) {
    if (isError) {
       return
    }
+   const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
