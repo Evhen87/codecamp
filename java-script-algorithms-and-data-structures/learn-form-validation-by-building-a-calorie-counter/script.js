@@ -251,8 +251,13 @@ function addEntry() {
 }
 /*Step 68
 Now it's time to start putting it all together. Declare an empty calculateCalories function, which takes a parameter named e. This function will be another event listener, so the first argument passed will be the browser event – e is a common name for this parameter.*/
-function calculateCalories(e) {
+/*Step 69
+You will be attaching this function to the submit event of the form. The submit event is triggered when the form is submitted. The default action of the submit event is to reload the page. You need to prevent this default action using the preventDefault() method of your e parameter.
 
+Add a line to your calculateCalories function that calls the preventDefault() method on the e parameter. Then, reset your global error flag isError to false.*/
+function calculateCalories(e) {
+   e.preventDefault();
+   isError = false;
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
