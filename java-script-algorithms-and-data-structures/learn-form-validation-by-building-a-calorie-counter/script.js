@@ -271,6 +271,12 @@ Declare a breakfastCalories variable, and assign it the result of calling getCal
 Now declare a lunchCalories variable, and give it the value of calling getCaloriesFromInputs with your lunchNumberInputs.*/
 /*Step 75
 Following this same pattern, declare variables for the number inputs in the #dinner, #snacks, and #exercise elements. Assign them the appropriate getCaloriesFromInputs calls.*/
+/*Step 76
+You also need to get the value of your #budget input. You already queried this at the top of your code, and set it to the budgetNumberInput variable. However, you used getElementById, which returns an Element, not a NodeList.
+
+A NodeList is an array-like object, which means you can iterate through it and it shares some common methods with an array. For your getCaloriesFromInputs function, an array will work for the argument just as well as a NodeList does.
+
+Declare a budgetCalories variable and set it to the result of calling getCaloriesFromInputs – pass an array containing your budgetNumberInput as the argument.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -284,6 +290,7 @@ function calculateCalories(e) {
    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+   const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 }
 /*Step 57
 Great! Now you can add entries without losing your previous inputs.
