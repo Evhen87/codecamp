@@ -196,10 +196,13 @@ Now you need to build your dynamic HTML string to add to the webpage. Declare a 
 Inside your template literal, create a label element and give it the text Entry # Name. Using your template literal syntax, replace # with the value of entryNumber.*/
 /*Step 48
 Give your label element a for attribute with the value X-#-name, where X is the value of the entryDropdown element and # is the value of entryNumber. Remember that HTML attributes should be wrapped in double quotes.*/
+/*Step 49
+After your label element, and on a new line in your template string, create an input element. Give it a type attribute set to text, a placeholder attribute set to Name, and an id attribute that matches the for attribute of your label element.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
    }
    const entryNumber = targetInputContainer.querySelectorAll().length;
-   const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>`;
+   const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" >`;
 }
