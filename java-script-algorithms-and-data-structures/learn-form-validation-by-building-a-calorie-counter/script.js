@@ -432,6 +432,11 @@ function getCaloriesFromInputs(list) {
    };
    return calories;
 }
+/*Step 90
+Your final feature to add is the ability for a user to clear the form. Start by declaring an empty function called clearForm – it should not take any arguments.*/
+function clearForm() {
+
+}
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
 
