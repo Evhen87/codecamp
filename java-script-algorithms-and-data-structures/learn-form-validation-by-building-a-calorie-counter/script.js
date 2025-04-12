@@ -232,6 +232,12 @@ This bug occurs because you are querying for input[type="text"] elements before 
 Your other bug occurs if you add a Breakfast entry, fill it in, then add a second Breakfast entry. You'll see that the values you added disappeared.
 
 This is because you are updating innerHTML directly, which does not preserve your input content. Change your innerHTML assignment to use the insertAdjacentHTML() method of targetInputContainer instead. Do not pass any arguments yet.*/
+/*Step 56
+The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
+
+For the first argument, pass the string "beforeend" to insert the new element as the last child of targetInputContainer.
+
+For the second argument, pass your HTMLString variable.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
@@ -241,7 +247,7 @@ function addEntry() {
    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" >
    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
    <input type="number" id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" min="0">`;
-   targetInputContainer.insertAdjacentHTML();
+   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
