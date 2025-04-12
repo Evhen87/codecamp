@@ -192,10 +192,12 @@ Pass the string input[type="text"] to the querySelectorAll() method. Remember th
 This will return a NodeList of all the text inputs in the form. You can then access the length property of the NodeList to get the number of entries. Do this on the same line.*/
 /*Step 46
 Now you need to build your dynamic HTML string to add to the webpage. Declare a new HTMLString variable, and assign it an empty template literal string.*/
+/*Step 48
+Give your label element a for attribute with the value X-#-name, where X is the value of the entryDropdown element and # is the value of entryNumber. Remember that HTML attributes should be wrapped in double quotes.*/
 function addEntry() {
    function addEntry() {
       const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
    }
    const entryNumber = targetInputContainer.querySelectorAll().length;
-   const HTMLString = ``;
+   const HTMLString = `<label>Entry ${entryNumber} Name</label>`;
 }
