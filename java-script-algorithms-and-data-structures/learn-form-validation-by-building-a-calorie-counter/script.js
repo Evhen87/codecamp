@@ -249,6 +249,15 @@ function addEntry() {
    <input type="number" id="${entryDropdown.value}-${entryNumber}-calories" placeholder="Calories" min="0">`;
    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
+/*Step 57
+Great! Now you can add entries without losing your previous inputs.
+
+Your next step is to write a function that will get the calorie counts from the user's entries.
+
+Declare a getCaloriesFromInputs function, and give it a parameter called list.*/
+function getCaloriesFromInputs(list) {
+
+}
 /*Step 53
 In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
 
