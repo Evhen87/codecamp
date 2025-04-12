@@ -313,6 +313,10 @@ In your span text, wrap your remainingCalories reference in Math.abs() to ensure
 After your span element, add an hr element to create a horizontal line.
 
 To keep your code clean and readable, you should add this on a new line in the template literal.*/
+/*Step 86
+Now create a p element with the text budgetCalories Calories Budgeted, using interpolation to replace budgetCalories with the appropriate variable.
+
+This should come after your hr element.*/
 function calculateCalories(e) {
    e.preventDefault();
    isError = false;
@@ -335,6 +339,7 @@ function calculateCalories(e) {
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
    output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
    <hr>
+   <p>${budgetCalories} Calories Budgeted</p>
    `;
 }
 /*Step 57
